@@ -1,0 +1,8 @@
+id: content-marketing
+type: skill
+version: 1.0.0
+name: Content Marketing
+description: >-
+  Plan and produce content marketing assets: blogs, whitepapers, case studies. Use for inbound and thought leadership.
+tags: [marketing, content-marketing]
+status: active

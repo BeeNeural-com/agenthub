@@ -1,0 +1,8 @@
+id: sop-builder
+type: skill
+version: 1.0.0
+name: SOP Builder
+description: >-
+  Author standard operating procedures with RACI, steps, and exceptions. Use for repeatable operational processes.
+tags: [operations, sop-builder]
+status: active

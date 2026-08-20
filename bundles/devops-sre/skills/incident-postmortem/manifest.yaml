@@ -1,0 +1,8 @@
+id: incident-postmortem
+type: skill
+version: 1.0.0
+name: Incident Postmortem
+description: >-
+  Facilitate blameless postmortems with timeline, root cause, and action items. Use within 5 business days of incident resolution.
+tags: [devops-sre, incident-postmortem]
+status: active

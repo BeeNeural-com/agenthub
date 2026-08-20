@@ -1,0 +1,8 @@
+id: agent-workflow-design
+type: skill
+version: 1.0.0
+name: Agent Workflow Design
+description: >-
+  Design multi-step agent workflows with tools, gates, and human checkpoints. Use for autonomous task automation.
+tags: [ai-operations, agent-workflow-design]
+status: active

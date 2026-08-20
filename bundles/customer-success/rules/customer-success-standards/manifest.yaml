@@ -1,0 +1,8 @@
+id: customer-success-standards
+type: rule
+version: 1.0.0
+name: Customer Success Standards
+description: >-
+  Empathy, SLA alignment, and health scoring.
+tags: [customer-success, standards]
+status: active

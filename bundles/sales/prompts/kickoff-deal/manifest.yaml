@@ -1,0 +1,8 @@
+id: kickoff-deal
+type: prompt
+version: 1.0.0
+name: Kickoff Deal Prep
+description: >-
+  Kickoff prompt for Sales & Revenue workflows.
+tags: [sales, kickoff]
+status: active

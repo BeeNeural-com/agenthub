@@ -1,0 +1,9 @@
+id: experiment-logging
+type: rule
+version: 1.0.0
+name: Experiment Logging
+description: >-
+  Lab notebook and experiment record format for spikes, benchmarks, and R&D
+  validations requiring reproducible logging.
+tags: [r-and-d, experiment, logging]
+status: active

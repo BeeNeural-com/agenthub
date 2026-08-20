@@ -1,0 +1,9 @@
+id: unit-economics
+type: skill
+version: 1.0.0
+name: Unit Economics
+description: >-
+  Model unit economics: CAC, LTV, margins, payback period. Use for SaaS or transactional business review.
+tags: [finance, unit-economics]
+riskTier: T2
+status: active

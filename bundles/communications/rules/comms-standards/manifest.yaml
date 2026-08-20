@@ -1,0 +1,8 @@
+id: comms-standards
+type: rule
+version: 1.0.0
+name: Communications Standards
+description: >-
+  Tone, audience segmentation, and approval workflow.
+tags: [communications, standards]
+status: active

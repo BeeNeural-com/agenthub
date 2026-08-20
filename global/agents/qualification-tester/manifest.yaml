@@ -1,0 +1,24 @@
+id: qualification-tester
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Qualification Tester
+description: >-
+  Role agent for qualification testing (SWE.6). Phase 1: test specification (doc/component_qualification_tests/).
+  Phase 2: test implementation (tests/qualification/). Applies Plan-First gate.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

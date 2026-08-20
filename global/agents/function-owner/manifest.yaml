@@ -1,0 +1,25 @@
+id: function-owner
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Function Owner
+description: >-
+  Role agent for the function owner / stakeholder function. Accepts a feature idea, use-case gap, or product-level
+  decision request. Applies a Plan-First gate before applying the Consultant workflow (for research) and
+  the SWE.1 Requirements Writer workflow (for requirements).
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

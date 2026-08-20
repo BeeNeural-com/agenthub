@@ -1,0 +1,9 @@
+id: data-analysis
+type: skill
+version: 1.0.0
+name: Data Analysis
+description: >-
+  Exploratory data analysis and interpretation for R&D experiments, benchmarks,
+  telemetry, and lab measurements.
+tags: [r-and-d, data, analysis]
+status: active

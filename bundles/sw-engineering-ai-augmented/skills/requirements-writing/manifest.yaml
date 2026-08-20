@@ -1,0 +1,22 @@
+id: requirements-writing
+type: skill
+version: 1.0.0
+name: Requirements Writing
+description: >-
+  Component software requirements authoring reference for E3 Software Platform. Contains common patterns, anti-patterns, guidance on abstraction level, and best practices.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

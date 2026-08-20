@@ -1,0 +1,22 @@
+id: parasoft-vwos-ruleset
+type: skill
+version: 1.0.0
+name: Parasoft VWOS Ruleset
+description: >-
+  VW.os C++ Parasoft static analysis ruleset with forbidden patterns and compliance rules for E3 Software Platform components.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

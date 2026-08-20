@@ -1,0 +1,8 @@
+id: discovery-call-prep
+type: skill
+version: 1.0.0
+name: Discovery Call Prep
+description: >-
+  Prepare discovery calls with hypothesis, questions, and success criteria. Use before first or expansion sales meetings.
+tags: [sales, discovery-call-prep]
+status: active

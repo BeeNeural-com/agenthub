@@ -1,0 +1,8 @@
+id: docx-authoring
+type: skill
+version: 1.0.0
+name: DOCX Authoring
+description: >-
+  Create and edit Word documents with consistent structure, styles, and tracked changes. Use when producing reports, memos, or contracts from markdown or scratch.
+tags: [document-processing, docx-authoring]
+status: active

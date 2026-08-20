@@ -1,0 +1,8 @@
+id: process-optimization
+type: skill
+version: 1.0.0
+name: Process Optimization
+description: >-
+  Analyze and improve business processes using lean and value stream mapping. Use when cycle time or quality issues persist.
+tags: [operations, process-optimization]
+status: active

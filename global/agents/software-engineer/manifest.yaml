@@ -1,0 +1,26 @@
+id: software-engineer
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Software Engineer
+description: >-
+  Role agent for the software engineer function. Covers four sequential stages: Stage 1 — detailed design
+  (src/*.h); Stage 2 — unit construction (src/*.cpp); Stage 3 — unit test specification (tests/unit/ FAIL()
+  stubs); Stage 4 — unit test implementation (tests/unit/ AAA bodies + build/run). Applies a Plan-First
+  gate and owns ASPICE SWE.3 and SWE.4 BP knowledge using .github/skills/ and .github/instructions/ files.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

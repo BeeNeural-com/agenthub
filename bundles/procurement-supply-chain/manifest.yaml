@@ -1,0 +1,16 @@
+id: procurement-supply-chain
+type: bundle
+version: 1.0.0
+name: Procurement & Supply Chain
+description: >-
+  RFP drafting and vendor evaluation for sourcing and supplier management.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - procurement
+  - supply-chain
+  - rfp
+  - vendor
+status: active
+skill_count: 2

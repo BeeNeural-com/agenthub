@@ -1,0 +1,8 @@
+id: sprint-planning
+type: skill
+version: 1.0.0
+name: Sprint Planning
+description: >-
+  Facilitate sprint planning with capacity, commitments, and sprint goal. Use at sprint start for agile teams.
+tags: [product-management, sprint-planning]
+status: active

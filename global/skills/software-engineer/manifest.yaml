@@ -1,0 +1,24 @@
+id: software-engineer
+type: skill
+version: 1.0.0
+created_at: '2026-03-04'
+name: software-engineer
+description: >-
+  Core software engineering principles for code style, documentation, and development workflow. Applies
+  when editing code, working in software repositories, or performing software development tasks.
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-04'
+  by: eqir1ib
+  changes:
+  - Initial release

@@ -1,0 +1,8 @@
+id: statistical-analysis
+type: skill
+version: 1.0.0
+name: Statistical Analysis
+description: >-
+  Apply appropriate statistical tests and interpret results with uncertainty. Use for experiments and hypothesis testing.
+tags: [data-analytics, statistical-analysis]
+status: active

@@ -1,0 +1,134 @@
+= SWE.3 — Software Detailed Design and Unit Construction: ASPICE Rating Guidelines
+:source: VDA Automotive SPICE Guidelines, 2nd Edition 2023, Section 3.10
+:toc: left
+:toclevels: 3
+
+== Purpose
+
+Establish a software detailed design comprising static and dynamic aspects, consistent with the software architecture, and construct software units consistent with the software detailed design.
+
+== General Interpretation Guidance
+
+=== The Aim of Software Detailed Design
+
+The detailed design bridges the gap between the software architecture and source code. Its purposes are:
+
+. *Comprehensibility* — documents the software at a level that future staff can understand without reading every line of code.
+. *Divide and conquer* — further decomposes architectural components into software units that are easier to understand, implement, and verify individually.
+. *Abstraction* — the detailed design is a semantic abstraction from the source code, _not_ a graphical representation of the code logic. It must precede and drive the code, not be reverse-engineered from it.
+
+Without a detailed design, the step from requirements to code-level involves risk of losing software understanding and impacting maintainability.
+
+=== Detailing Out Software Components
+
+The detailed design refines each component from the architectural design into software units and their interfaces. These units are:
+
+* The basis for generating or writing source code.
+* The granularity at which unit verification (SWE.4) is planned.
+
+The design for a component describes both _how units are organized statically_ (structure and relationships) and _how they interact dynamically_ (internal behavior).
+
+NOTE: In Automotive SPICE v3.1, BP1 was often misread as merely identifying units (listing their names). Automotive SPICE v4.0 tightens the language: BP1 now explicitly requires specifying the _behavior_ of each unit, its _static structure and relationships_, and its _interfaces_. BP2 now requires specifying _dynamic aspects_, not just call graphs.
+
+=== Views on Detailed Design
+
+Detailed design comprises at minimum a *static view* and a *dynamic view*. There is no prescribed notation. Most implementations combine graphical representations (UML class/sequence diagrams, state machines) with comprehensive textual explanations.
+
+=== What a "Software Unit" Is
+
+A software unit is a *logical modeling-level* term, not an implementation-level term.
+
+Key properties:
+
+* A software unit has a coherent, application-domain-identifiable behavior.
+* A software unit is independently verifiable (SWE.4 verifies units against their design specification).
+* At the code level, a software unit _may_ be represented by a single subroutine, a set of subroutines, or an entire source file — the decision is driven by application-domain semantics, not code size.
+
+Examples of valid software units:
+
+* A motor driver `.c` file with multiple C functions that collectively transform motor commands into I/O signals — cohesive domain behavior.
+* A single C function implementing a UML state machine via a `switch-case` — the entire function is the "state machine unit" even if its branches could be factored into sub-functions.
+
+=== Code Metrics vs. Software Unit Boundaries
+
+Code complexity metrics (e.g., McCabe cyclomatic complexity) are *not* the primary driver for defining software unit boundaries.
+
+A high McCabe value for a `switch`-based month-name lookup function (M=14) does not make the function harder to understand than a simpler but obscure alternative. A combination of metrics may indicate where refactoring _should be discussed_, but:
+
+* A metric violation alone is not sufficient justification for restructuring.
+* A metric violation with a reasonable domain argument is not a non-conformity.
+
+=== Traceability and Consistency (Option A vs. Option B)
+
+Understanding which software requirement is realized in the detailed design is required for: comprehension, impact analysis, dead-code detection, and requirements coverage proof.
+
+Two traceability options:
+
+==== Option A — Traceability via Software Architecture (Preferred for Cross-Component Requirements)
+
+Use dynamic models (UML/SysML Sequence or Activity Diagrams) assigned to the requirement. A sequence through multiple components/units demonstrates that the requirement is completely and consistently satisfied.
+
+Advantages:
+* Minimizes the number of traceability links.
+* Allows quality judgment of completeness and consistency at the requirement level.
+* Best combined with grouping atomic requirements into use-case-level descriptions.
+
+==== Option B — Direct Traceability to Detailed Design Elements
+
+Use direct references between a specific requirement and the software unit(s) that implement it. Appropriate when a requirement maps cleanly to a small, identifiable set of units (e.g., a CAN message decoder mapped to its handler units).
+
+NOTE: Automotive SPICE 4.0 SWE.3.BP demands consistency and traceability between the _SW detailed design_ and _SW requirements_, but does _not_ require traceability to individual source code files or functions directly.
+
+=== Coding Principles at CL1 (BP3 Strengthening in AS v4.0)
+
+BP3 now requires that coding principles be applied _during_ unit construction, not only reviewed afterward. Coding principles expected at CL1 (applicable to all projects):
+
+* No implicit type conversions — avoids value range under-/overflows.
+* One entry and one exit point per subroutine — avoids systematic faults.
+* Encapsulation — avoid global visibility of variables; prefer local scope.
+* Defensive programming:
+** Range checks and design-by-contract at function boundaries.
+** Enum values initialized with deliberate Hamming distance to resist memory corruption.
+
+Coding principles expected only at CL2 (context-dependent, e.g., platform products):
+
+* Naming conventions and commenting templates (maintainability/comprehensibility).
+* Portability, scalability, reusability.
+
+NOTE: A project developing a highly custom, customer-specific legacy product for a single application may have none of the CL2 principles — this is acceptable. The assessor must evaluate coding principles against the actual project context.
+
+== Rating Rules Within the Process
+
+=== RL.1 — Software Unit Represented by a Cluster of Subroutines
+
+*Condition:* A software unit in the detailed design is realized at the code level by a cluster of programming language subroutines (not a single atomic subroutine).
+
+*Consequence:* `SWE.3.BP1` and `SWE.3.BP3` shall *not* be downrated. A cluster of subroutines realizing one design-level unit is the expected and correct outcome.
+
+=== RL.2 — Code Metric Targets Formally Violated with Reasonable Justification
+
+*Condition:* Code metric targets for a programming language routine are formally violated (e.g., McCabe > threshold), but there are reasonable context-specific arguments why the size and boundary of that routine remain acceptable (e.g., an exhaustive switch-case mapping that is clearer as one function).
+
+*Consequence:* `SWE.3.BP1` shall *not* be downrated.
+
+=== RL.3 — Low-Complexity Unit with Textual-Only Dynamic Description
+
+*Condition:* A software unit is of sufficiently low complexity from the application domain knowledge perspective that its dynamic behavior can be adequately described in text, without use of a graphical notation. Only a textual explanation is provided.
+
+*Consequence:* `SWE.3.BP2` shall *not* be downrated. Graphical notation is not mandatory when textual description is adequate.
+
+== Rating Rules With Other Processes at Level 1
+
+None defined for SWE.3 in the VDA Guidelines.
+
+== Key Base Practices Summary
+
+[cols="1,4", options="header"]
+|===
+| BP | Subject
+| BP1 | Develop detailed design for each software component — specify behavior, static structure, relationships, and interfaces of all software units.
+| BP2 | Specify and document dynamic aspects — how units interact internally; use graphical or textual representation that abstracts from the source code.
+| BP3 | Develop software units — construct source code according to the detailed design, applying coding principles (no implicit conversions, one entry/exit point, encapsulation, defensive programming).
+| BP4 | Establish bidirectional traceability — between the detailed design and SW requirements (via architecture or direct links); verify no dead code and full requirements coverage.
+| BP5 | Ensure consistency — between the detailed design and the software architecture (no contradiction, no gap).
+|===

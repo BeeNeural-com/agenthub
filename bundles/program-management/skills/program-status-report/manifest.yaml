@@ -1,0 +1,8 @@
+id: program-status-report
+type: skill
+version: 1.0.0
+name: Program Status Report
+description: >-
+  Consolidated status across workstreams for program leadership. Use for monthly or steerco reporting.
+tags: [program-management, program-status-report]
+status: active

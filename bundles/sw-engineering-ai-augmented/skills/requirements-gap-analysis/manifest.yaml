@@ -1,0 +1,22 @@
+id: requirements-gap-analysis
+type: skill
+version: 1.0.0
+name: Requirements Gap Analysis
+description: >-
+  Gap analysis taxonomy, workflow, and report template for software requirements. Use to detect structural and content gaps in a component requirement specification.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

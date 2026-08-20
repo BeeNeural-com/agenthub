@@ -1,0 +1,32 @@
+id: security-code-reviewer
+type: agent
+version: 1.0.0
+created_at: '2026-04-21'
+name: Security Code Reviewer
+description: >-
+  Red Team agent for code security reviews — threat modeling, OWASP Top 10 scans, secrets scanning, and
+  pre-deploy audits. Identifies vulnerabilities, never fixes them.
+author:
+  name: Michael Paetsch
+  id: vn2y9yt
+tags:
+- security
+- code-review
+- owasp
+- threat-modeling
+- rls
+- secrets-scan
+- devsecops
+- red-team
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-04-21'
+  by: vn2y9yt
+  changes:
+  - Initial release

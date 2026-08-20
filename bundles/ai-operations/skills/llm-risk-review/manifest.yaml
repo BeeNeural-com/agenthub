@@ -1,0 +1,8 @@
+id: llm-risk-review
+type: skill
+version: 1.0.0
+name: LLM Risk Review
+description: >-
+  Review LLM features for safety, bias, data leakage, and abuse scenarios. Use before launch or after incidents.
+tags: [ai-operations, llm-risk-review]
+status: active

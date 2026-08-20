@@ -1,0 +1,8 @@
+id: monitoring-setup
+type: skill
+version: 1.0.0
+name: Monitoring Setup
+description: >-
+  Design metrics, logs, and traces with dashboards and alerts for a service. Use for new services or observability gaps.
+tags: [devops-sre, monitoring-setup]
+status: active

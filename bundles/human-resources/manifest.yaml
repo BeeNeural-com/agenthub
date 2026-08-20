@@ -1,0 +1,16 @@
+id: human-resources
+type: bundle
+version: 1.0.0
+name: Human Resources
+description: >-
+  Job descriptions, interview kits, scorecards, and onboarding plans for people operations.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - hr
+  - people-ops
+  - hiring
+  - onboarding
+status: active
+skill_count: 4

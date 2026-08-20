@@ -1,0 +1,8 @@
+id: customer-success-manager
+type: agent
+version: 1.0.0
+name: Customer Success Manager
+description: >-
+  Primary role agent for Customer Success bundle with Plan-First gate.
+tags: [customer-success, agent]
+status: active

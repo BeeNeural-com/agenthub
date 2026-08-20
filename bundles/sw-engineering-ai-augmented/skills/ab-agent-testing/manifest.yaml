@@ -1,0 +1,22 @@
+id: ab-agent-testing
+type: skill
+version: 1.0.0
+name: A/B Agent Testing
+description: >-
+  A/B testing methodology for comparing role agent versions. Use when evaluating agent definition changes, instruction rewrites, or skill additions by running controlled side-by-side tests.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

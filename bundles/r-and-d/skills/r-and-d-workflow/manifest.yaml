@@ -1,0 +1,9 @@
+id: r-and-d-workflow
+type: skill
+version: 1.0.0
+name: R&D Workflow
+description: >-
+  Orchestrate end-to-end R&D pipelines: research scouting, feasibility, prototyping,
+  experiment design, and handoff to requirements.
+tags: [r-and-d, workflow, orchestration]
+status: active

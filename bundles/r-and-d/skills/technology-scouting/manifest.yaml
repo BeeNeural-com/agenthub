@@ -1,0 +1,9 @@
+id: technology-scouting
+type: skill
+version: 1.0.0
+name: Technology Scouting
+description: >-
+  Structured technology scouting and competitive landscape analysis for vendor, framework,
+  and platform evaluation before R&D or architecture decisions.
+tags: [r-and-d, research, scouting, technology]
+status: active

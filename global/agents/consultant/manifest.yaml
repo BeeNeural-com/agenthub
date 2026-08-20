@@ -1,0 +1,25 @@
+id: consultant
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Consultant
+description: >-
+  Role agent for the domain researcher / technology advisor function. Accepts a research question, technology
+  comparison request, or domain knowledge gap. Applies a Plan-First gate before delegating to the Consultant
+  specialist.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

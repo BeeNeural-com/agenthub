@@ -1,0 +1,9 @@
+id: kickoff-research
+type: prompt
+version: 1.0.0
+name: Kickoff Research
+description: >-
+  Start a structured R&D research thread with skill/agent selection and an approved
+  research plan before execution.
+tags: [r-and-d, research, kickoff]
+status: active

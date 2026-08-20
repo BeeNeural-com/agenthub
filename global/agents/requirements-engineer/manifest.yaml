@@ -1,0 +1,25 @@
+id: requirements-engineer
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Requirements Engineer
+description: >-
+  Role agent for the requirements engineer function. Accepts a component and a set of req: IDs or a change
+  request. Applies a Plan-First gate, owns all ASPICE SWE.1 BP knowledge, and applies Plan-First gate
+  and owns all ASPICE SWE.1 BP knowledge using `.github/skills/` and `.github/instructions/` files.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

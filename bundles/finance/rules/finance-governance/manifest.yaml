@@ -1,0 +1,8 @@
+id: finance-governance
+type: rule
+version: 1.0.0
+name: Finance Governance
+description: >-
+  Data sensitivity, disclaimers, and human review requirements.
+tags: [finance, standards]
+status: active

@@ -1,0 +1,8 @@
+id: threat-modeling
+type: skill
+version: 1.0.0
+name: Threat Modeling
+description: >-
+  Systematic threat analysis using STRIDE or attack trees for features and systems. Use during design or security review.
+tags: [security, threat-modeling]
+status: active

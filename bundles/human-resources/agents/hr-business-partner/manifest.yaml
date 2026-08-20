@@ -1,0 +1,8 @@
+id: hr-business-partner
+type: agent
+version: 1.0.0
+name: HR Business Partner
+description: >-
+  Primary role agent for Human Resources bundle with Plan-First gate.
+tags: [human-resources, agent]
+status: active

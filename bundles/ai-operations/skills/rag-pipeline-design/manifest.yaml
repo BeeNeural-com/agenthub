@@ -1,0 +1,8 @@
+id: rag-pipeline-design
+type: skill
+version: 1.0.0
+name: RAG Pipeline Design
+description: >-
+  Design retrieval-augmented generation pipelines: ingestion, chunking, retrieval, reranking. Use for knowledge-base Q&A features.
+tags: [ai-operations, rag-pipeline-design]
+status: active

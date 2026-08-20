@@ -1,0 +1,17 @@
+id: data-analytics
+type: bundle
+version: 1.0.0
+name: Data & Analytics
+description: >-
+  SQL review, exploration, statistics, dashboards, and KPI definition for data-driven decisions.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - data
+  - analytics
+  - sql
+  - kpi
+  - dashboard
+status: active
+skill_count: 5

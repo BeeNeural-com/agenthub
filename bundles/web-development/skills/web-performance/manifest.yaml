@@ -1,0 +1,9 @@
+id: web-performance
+type: skill
+version: 1.0.0
+name: Web Performance
+description: >-
+  Core Web Vitals, Lighthouse audits, bundle optimization, and lazy loading.
+  Use when improving web application speed and user experience metrics.
+tags: [web-development, performance, optimization]
+status: active

@@ -1,0 +1,8 @@
+id: secrets-scanning
+type: skill
+version: 1.0.0
+name: Secrets Scanning
+description: >-
+  Scan repositories, CI logs, and artifacts for exposed secrets. Use in CI and after suspected leakage.
+tags: [security, secrets-scanning]
+status: active

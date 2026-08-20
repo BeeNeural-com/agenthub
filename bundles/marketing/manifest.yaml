@@ -1,0 +1,16 @@
+id: marketing
+type: bundle
+version: 1.0.0
+name: Marketing & Growth
+description: >-
+  Campaign planning, content, SEO, email, and landing page copy for go-to-market teams.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - marketing
+  - campaign
+  - seo
+  - content
+status: active
+skill_count: 6

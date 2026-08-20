@@ -1,0 +1,9 @@
+id: research-to-requirements
+type: skill
+version: 1.0.0
+name: Research to Requirements
+description: >-
+  Translate R&D findings into component software requirements for handoff to
+  requirements engineering and SWE.1.
+tags: [r-and-d, requirements, handoff, swe]
+status: active

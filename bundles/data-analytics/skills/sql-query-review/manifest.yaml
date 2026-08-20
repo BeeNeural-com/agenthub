@@ -1,0 +1,8 @@
+id: sql-query-review
+type: skill
+version: 1.0.0
+name: SQL Query Review
+description: >-
+  Review and improve SQL for correctness, performance, and safety. Use before running analytics or production queries.
+tags: [data-analytics, sql-query-review]
+status: active

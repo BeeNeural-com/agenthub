@@ -1,0 +1,22 @@
+id: vlan-kmatrix
+type: skill
+version: 1.0.0
+name: VLAN K-Matrix
+description: >-
+  VLAN K-Matrix reference and guidance for E3 Software Platform network configuration and IPC topology design.
+author:
+  name: Alexander Gembar
+  id: tsq7mde
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tsq7mde
+  changes:
+  - Initial release

@@ -1,0 +1,22 @@
+id: python-guidelines
+type: rule
+version: 1.0.0
+created_at: '2026-02-27'
+name: Python Guidelines
+description: Coding conventions for Python files
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-02-27'
+  by: eqir1ib
+  changes:
+  - Initial release

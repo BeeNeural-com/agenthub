@@ -1,0 +1,8 @@
+id: kickoff-product
+type: prompt
+version: 1.0.0
+name: Kickoff Product Work
+description: >-
+  Kickoff prompt for Product Management workflows.
+tags: [product-management, kickoff]
+status: active

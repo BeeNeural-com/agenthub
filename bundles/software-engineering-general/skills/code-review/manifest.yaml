@@ -1,0 +1,8 @@
+id: code-review
+type: skill
+version: 1.0.0
+name: Code Review
+description: >-
+  Review pull requests for correctness, readability, security, and maintainability. Use for PR-level review distinct from full-repo structured audits.
+tags: [software-engineering-general, code-review]
+status: active

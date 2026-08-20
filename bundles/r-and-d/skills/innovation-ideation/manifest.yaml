@@ -1,0 +1,9 @@
+id: innovation-ideation
+type: skill
+version: 1.0.0
+name: Innovation Ideation
+description: >-
+  Structured innovation and ideation with TRL assessment for new features, research
+  directions, and product concepts.
+tags: [r-and-d, innovation, ideation, trl]
+status: active

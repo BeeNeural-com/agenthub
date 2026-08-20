@@ -1,0 +1,8 @@
+id: ai-governance-standards
+type: rule
+version: 1.0.0
+name: AI Governance Standards
+description: >-
+  Safety tiers, eval gates, and production AI controls.
+tags: [ai-operations, standards]
+status: active

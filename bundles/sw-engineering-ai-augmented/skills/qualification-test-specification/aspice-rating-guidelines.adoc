@@ -1,0 +1,84 @@
+= SWE.6 — Software Verification: ASPICE Rating Guidelines
+:source: VDA Automotive SPICE Guidelines, 2nd Edition 2023, Section 3.13
+:toc: left
+:toclevels: 3
+
+== Purpose
+
+Ensure that the integrated software is verified to provide evidence for compliance with the software requirements using verification measures consistent with the software requirements.
+
+== General Interpretation Guidance
+
+=== Black-Box View of the Software
+
+SWE.6 takes a *black-box perspective*: the object under verification is the integrated software considered from the outside — through its observable behavior and outputs — against the software requirements (SWE.1).
+
+The verification environment is not the object under test. Any environment (HIL, SIL, target hardware, test bench) is applicable, as long as it can stimulate the software's observable interfaces and capture its outputs.
+
+=== What SWE.6 Is Not
+
+* SWE.6 is not a repetition of SWE.4 (unit testing) or SWE.5 (integration testing). It verifies the *fully integrated software product* against *software requirements*, not against design elements.
+* SWE.6 test cases must trace to SWE.1 `req:` IDs — not to architectural elements (`arch:`) as in SWE.5.
+
+=== Verification Measure Definition
+
+Entry and exit criteria may be defined *per set of measures* (e.g., at the campaign or test phase level). This avoids per-test overhead while maintaining systematic coverage.
+
+=== Automation of Verification Measures
+
+Automated qualification tests (scripts, test programs) must be addressed for correctness, completeness, and consistency in the verification measure definition. Automated measures that are not themselves verified do not constitute valid evidence.
+
+=== Explorative Verification
+
+Experience-based explorative testing (error guessing, boundary probing beyond specified ranges) is a valid complement to specification-derived testing. Explorative verification:
+
+* Cannot by definition be traced to individual software requirements.
+* *Must* maintain traceability between individual explorative test cases and their results.
+
+=== Traceability and Consistency
+
+See also VDA Guidelines section 3.3.1 (SYS.1) and section 2.3.4 (traceability clusters). Every SWE.1 requirement with `:verification_method: dynamic_test` or `static_test` must have at least one TCASE referencing it, with a test result demonstrating compliance.
+
+== Rating Rules Within the Process
+
+=== RL.1 — Entry/Exit Criteria Specified for a Set of Measures
+
+*Condition:* Entry/exit criteria are reasonably specified for a _set_ of verification measures (at the campaign or phase level) rather than for each individual measure.
+
+*Consequence:* `SWE.6.BP1` shall *not* be downrated.
+
+=== RL.2 — Automated Verification Measure Without Self-Verification
+
+*Condition:* A verification measure is automated, but the correctness, completeness, and consistency of the automation are *not* addressed in the verification measure definition.
+
+*Consequence:* `SWE.6.BP1` shall be *downrated*. Unverified automation is not valid evidence of compliance.
+
+=== RL.3 — Explorative Tests Without Traceability to Requirements
+
+*Condition:* Verification measures represent explorative tests (experience-based). By definition, these cannot be traced to specific software requirements.
+
+*Consequence:* `SWE.6.BP4` shall *not* be downrated for the absence of requirements traceability.
+
+NOTE: Traceability between explorative test _cases_ and their _results_ is still required.
+
+=== RL.4 — Measure Selection Based on Incomplete Release Plan
+
+*Condition:* Selection of qualification verification measures is technically sound but the release plan is inadequate or incomplete.
+
+*Consequence:* `SWE.6.BP2` shall *not* be downrated.
+
+== Rating Rules With Other Processes at Level 1
+
+None defined for SWE.6 in the VDA Guidelines.
+
+== Key Base Practices Summary
+
+[cols="1,4", options="header"]
+|===
+| BP | Subject
+| BP1 | Define software verification measures — specify scope, entry/exit criteria, and the software requirements under test; address automation correctness when automated.
+| BP2 | Select qualification test cases — derived from SWE.1 requirements (`:verification_method: dynamic_test`); selection based on technical expertise and risk; release plan completeness is not a prerequisite.
+| BP3 | Conduct static verification — review and inspect the integrated software against SWE.1 requirements with `:verification_method: static_test`.
+| BP4 | Establish bidirectional traceability — between qualification test cases and SWE.1 `req:` IDs; between explorative test cases and their results.
+| BP5 | Ensure consistency — between qualification test results and the software requirements (all discovered defects resolved or tracked).
+|===

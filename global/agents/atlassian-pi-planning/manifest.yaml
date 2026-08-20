@@ -1,0 +1,26 @@
+id: atlassian-pi-planning
+type: agent
+version: 1.0.0
+created_at: '2026-03-25'
+name: SAFe PI Planning Agent
+description: >-
+  SAFe PI Planning agent for RTEs, POs and Agile Teams. Use when: creating Epics, Features, User Stories
+  in Jira; writing PI objectives; capacity planning; ROAM risk classification; dependency mapping; evaluating
+  and improving backlog items against SAFe and INVEST criteria; checking AC coverage; linking stories
+  to epics; estimating story points.
+author:
+  name: Andreas Wittmann
+  id: vkwyoh9
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-25'
+  by: vkwyoh9
+  changes:
+  - Initial release

@@ -1,0 +1,8 @@
+id: procurement-standards
+type: rule
+version: 1.0.0
+name: Procurement Standards
+description: >-
+  Fair evaluation, conflict of interest, and total cost of ownership.
+tags: [procurement-supply-chain, standards]
+status: active

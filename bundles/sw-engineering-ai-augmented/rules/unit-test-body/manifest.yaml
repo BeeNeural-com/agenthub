@@ -1,0 +1,22 @@
+id: unit-test-body
+type: rule
+version: 1.0.0
+name: SWE.4 Unit Test Body
+description: >-
+  Rules for implementing AAA test bodies and fixture classes in tests/unit/**/*.cpp. Used by the Software Implementer after mocks are in place.
+author:
+  name: Mate Vukic
+  id: gvidwxu
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: gvidwxu
+  changes:
+  - Initial release

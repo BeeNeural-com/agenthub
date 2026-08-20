@@ -1,0 +1,99 @@
+= SWE.4 — Software Unit Verification: ASPICE Rating Guidelines
+:source: VDA Automotive SPICE Guidelines, 2nd Edition 2023, Section 3.11
+:toc: left
+:toclevels: 3
+
+== Purpose
+
+Verify that software units are consistent with the software detailed design.
+
+== General Interpretation Guidance
+
+=== Scope: Unit Testing AND Static Verification
+
+SWE.4 covers all unit-level verification activities, not only dynamic unit testing:
+
+* *Static verification* — code reviews, static analysis, compliance checks against coding principles defined in SWE.3.BP3.
+* *Dynamic testing* — executing unit test cases against the unit specification from the detailed design.
+
+Both are valid and complementary SWE.4 activities.
+
+=== The Purpose of Code Coverage
+
+The primary verification objective in SWE.4 is to check whether the software unit behaves as specified in its detailed design — *not* to achieve a specific code coverage percentage as an end goal in itself.
+
+Code coverage is *accompanying information* that helps judge the completeness of the selected test cases relative to the unit specification. It is not an independent verification objective.
+
+Interpretation by unit structure:
+
+* *One subroutine per unit* (e.g., one C++ method per state transition): A test case targeting that unit is expected to achieve ~100% coverage of that subroutine, because the entire subroutine represents the unit.
+* *One subroutine for multiple units* (e.g., a single `state_change()` method handling all transitions via a `switch-case`): A test case for one specific event (e.g., `MY_EVENT1`) will exercise only the relevant `case` branch — code coverage well below 100% is the expected, correct outcome.
+
+See also ISO 26262-6:2018, clause 9.4.4.
+
+=== Verification Measures Selection
+
+Selection of verification measures is based on:
+
+* Technical expertise about the software product and design.
+* Engineering experience and risk judgment.
+* The unit's complexity, criticality, and novelty.
+
+Release plan completeness is a project management concern, not a prerequisite for technically correct measure selection (see RL.4).
+
+=== Automation of Verification Measures
+
+When a verification measure is automated (e.g., a test script, a static analysis rule set), the correctness, completeness, and consistency of the automation itself must be addressed in the verification measure definition. Automated measures that are not themselves verified introduce an unacceptable blind spot.
+
+=== Explorative Testing
+
+State-of-the-art testing includes explorative testing based on engineering experience (e.g., error guessing, boundary probing beyond specified ranges). Explorative tests:
+
+* Cannot by definition be traced to a specific requirement or design element — they derive from experience, not from a specification.
+* *Can and must* have traceability between individual explorative test cases and their results.
+
+== Rating Rules Within the Process
+
+=== RL.1 — Verification Measure Not Necessary for a Specific Unit
+
+*Condition:* It is made reasonably plausible, based on context-specific arguments, that a particular verification measure is not necessary for a specific unit (e.g., the unit is trivially simple, generated code with proven correctness, or covered by a higher-level test).
+
+*Consequence:* `SWE.4.BP1` shall *not* be downrated.
+
+=== RL.2 — Automated Verification Measure Without Self-Verification
+
+*Condition:* A verification measure is automated (script or program), but the correctness, completeness, and consistency of the automation are *not* addressed in the verification measure definition.
+
+*Consequence:* `SWE.4.BP1` shall be *downrated*. Automation that is not itself verified is not a valid verification measure.
+
+=== RL.3 — Explorative Tests Without Traceability to Design
+
+*Condition:* Verification measures represent explorative tests (experience-based, not derived from requirements or design). By definition, these tests cannot be traced to the detailed design or requirements.
+
+*Consequence:* `SWE.4.BP4` shall *not* be downrated for the absence of design-traceability — this is expected and unavoidable for explorative tests.
+
+NOTE: Traceability between explorative test _cases_ and their _results_ is still required.
+
+=== RL.4 — Measure Selection Based on Incomplete Release Content
+
+*Condition:* Selection of verification measures is technically sound (based on expertise and risk judgment) but the project's release content definition is inadequate or incomplete.
+
+*Consequence:* `SWE.4.BP2` shall *not* be downrated. Technical measure selection is independent of release management completeness.
+
+== Rating Rules With Other Processes at Level 1
+
+=== RL.4 (Cross-Process) — Verification Measures Selection vs. Release Plans
+
+See RL.4 above. This rule has cross-process implications: the inadequacy of a release plan (a MAN.3 / SPL.2 concern) does not constitute an SWE.4 non-conformity.
+
+== Key Base Practices Summary
+
+[cols="1,4", options="header"]
+|===
+| BP | Subject
+| BP1 | Define software unit verification measures — specify test cases, static analysis rules, and review criteria based on the detailed design.
+| BP2 | Select unit test cases — derived from the unit specification (detailed design); supported by code coverage as completeness indicator, not as standalone objective.
+| BP3 | Perform static verification of units — code reviews, compliance with coding principles from SWE.3.BP3.
+| BP4 | Establish bidirectional traceability — between test cases/measures and the detailed design; also between explorative test cases and their results.
+| BP5 | Ensure consistency — between unit verification results and the detailed design (all discovered defects are resolved or tracked).
+|===

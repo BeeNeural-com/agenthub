@@ -1,0 +1,22 @@
+id: software-implementer
+type: agent
+version: 1.0.0
+name: Software Implementer
+description: >-
+  Red-green cycle: mock interfaces, implement test bodies (RED), implement production code (GREEN).
+author:
+  name: Alexander Gembar
+  id: tsq7mde
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tsq7mde
+  changes:
+  - Initial release

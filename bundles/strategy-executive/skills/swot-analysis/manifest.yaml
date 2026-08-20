@@ -1,0 +1,8 @@
+id: swot-analysis
+type: skill
+version: 1.0.0
+name: SWOT Analysis
+description: >-
+  Conduct SWOT analysis with actionable strategies from TOWS matrix. Use for strategic or product positioning decisions.
+tags: [strategy-executive, swot-analysis]
+status: active

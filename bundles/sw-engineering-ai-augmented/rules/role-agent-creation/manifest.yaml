@@ -1,0 +1,22 @@
+id: role-agent-creation
+type: rule
+version: 1.0.0
+name: Role Agent Creation
+description: >-
+  Structural rules and format conventions for creating a new role agent file from the template.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

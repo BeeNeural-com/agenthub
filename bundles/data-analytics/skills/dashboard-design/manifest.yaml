@@ -1,0 +1,8 @@
+id: dashboard-design
+type: skill
+version: 1.0.0
+name: Dashboard Design
+description: >-
+  Spec KPI dashboards with layout, filters, and drill paths. Use when building BI dashboards for teams or executives.
+tags: [data-analytics, dashboard-design]
+status: active

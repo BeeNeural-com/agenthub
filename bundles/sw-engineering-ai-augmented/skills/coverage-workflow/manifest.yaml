@@ -1,0 +1,22 @@
+id: coverage-workflow
+type: skill
+version: 1.0.0
+name: Coverage Workflow
+description: >-
+  gcovr coverage measurement workflow for SWE.3 unit construction: local build with COVERAGE=ON, test execution, and report generation.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

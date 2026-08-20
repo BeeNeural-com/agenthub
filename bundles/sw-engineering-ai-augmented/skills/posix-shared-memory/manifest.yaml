@@ -1,0 +1,22 @@
+id: posix-shared-memory
+type: skill
+version: 1.0.0
+name: POSIX Shared Memory
+description: >-
+  POSIX shared memory API reference (shm_open, mmap, munmap, shm_unlink, ftruncate) with usage patterns and pitfalls for C++ IPC.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

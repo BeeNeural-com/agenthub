@@ -1,0 +1,22 @@
+id: sca-compliance
+type: rule
+version: 1.0.0
+name: SCA Compliance
+description: >-
+  Parasoft static code analysis zero-findings mandate and VWOS ruleset compliance rules for production and test source files.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

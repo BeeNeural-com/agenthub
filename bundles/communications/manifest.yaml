@@ -1,0 +1,14 @@
+id: communications
+type: bundle
+version: 1.0.0
+name: Communications
+description: >-
+  Internal communications for org-wide announcements and change messaging.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - communications
+  - internal-comms
+status: active
+skill_count: 1

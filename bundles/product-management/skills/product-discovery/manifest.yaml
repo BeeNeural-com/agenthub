@@ -1,0 +1,8 @@
+id: product-discovery
+type: skill
+version: 1.0.0
+name: Product Discovery
+description: >-
+  Structured discovery: problem validation, assumption mapping, and experiment design before building. Use at idea stage or when success metrics are unclear.
+tags: [product-management, product-discovery]
+status: active

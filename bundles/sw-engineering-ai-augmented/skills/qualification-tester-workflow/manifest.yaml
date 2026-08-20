@@ -1,0 +1,22 @@
+id: qualification-tester-workflow
+type: skill
+version: 1.0.0
+name: Qualification Tester Workflow
+description: >-
+  Phase 1 (specification) and Phase 2 (implementation) execution steps for the Qualification Tester agent with full T-step procedure and triage gates.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

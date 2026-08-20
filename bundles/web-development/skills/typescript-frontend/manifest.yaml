@@ -1,0 +1,9 @@
+id: typescript-frontend
+type: skill
+version: 1.0.0
+name: TypeScript for Frontend
+description: >-
+  TypeScript patterns for React, Vue, and Angular: generics, strict mode, typed props,
+  and shared types. Use when adding types to frontend code.
+tags: [web-development, typescript, frontend]
+status: active

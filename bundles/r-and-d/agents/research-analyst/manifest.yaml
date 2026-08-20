@@ -1,0 +1,9 @@
+id: research-analyst
+type: agent
+version: 1.0.0
+name: Research Analyst
+description: >-
+  R&D research specialist for literature review, technology scouting, feasibility
+  studies, and trade analysis with Plan-First gate.
+tags: [r-and-d, research, agent]
+status: active

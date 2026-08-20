@@ -1,0 +1,8 @@
+id: data-analyst
+type: agent
+version: 1.0.0
+name: Data Analyst
+description: >-
+  Primary role agent for Data & Analytics bundle with Plan-First gate.
+tags: [data-analytics, agent]
+status: active

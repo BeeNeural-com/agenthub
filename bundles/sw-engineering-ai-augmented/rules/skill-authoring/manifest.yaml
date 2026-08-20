@@ -1,0 +1,22 @@
+id: skill-authoring
+type: rule
+version: 1.0.0
+name: Skill Authoring
+description: >-
+  Conventions and quality rules for authoring reusable skill files under .github/skills/.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

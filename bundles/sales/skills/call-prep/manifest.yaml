@@ -1,0 +1,8 @@
+id: call-prep
+type: skill
+version: 1.0.0
+name: Call Prep
+description: >-
+  Prepare meeting briefs with agenda, talk tracks, and objection handling. Use before any significant sales meeting.
+tags: [sales, call-prep]
+status: active

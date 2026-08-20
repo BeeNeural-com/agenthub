@@ -1,0 +1,8 @@
+id: devops-engineer
+type: agent
+version: 1.0.0
+name: DevOps Engineer
+description: >-
+  Primary role agent for DevOps & SRE bundle with Plan-First gate.
+tags: [devops-sre, agent]
+status: active

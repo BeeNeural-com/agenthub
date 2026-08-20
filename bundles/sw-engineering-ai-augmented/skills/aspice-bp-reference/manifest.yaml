@@ -1,0 +1,22 @@
+id: aspice-bp-reference
+type: skill
+version: 1.0.0
+name: ASPICE BP Reference
+description: >-
+  Canonical ASPICE PAM 4.0 Base Practice descriptions and review criteria. Load only when a role agent explicitly requests it for a review task.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

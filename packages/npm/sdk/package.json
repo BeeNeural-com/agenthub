@@ -1,0 +1,32 @@
+{
+  "name": "@agenthub/sdk",
+  "version": "0.1.0",
+  "description": "Agent Hub catalog SDK for Node/TypeScript applications",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@agenthub/mcp": "file:../mcp"
+  },
+  "devDependencies": {
+    "@types/node": "^22.17.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,17 @@
+id: ai-operations
+type: bundle
+version: 1.0.0
+name: AI Operations
+description: >-
+  Prompt engineering, RAG pipelines, LLM risk review, and multi-agent workflow design.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - ai
+  - llm
+  - rag
+  - prompts
+  - mlops
+status: active
+skill_count: 5

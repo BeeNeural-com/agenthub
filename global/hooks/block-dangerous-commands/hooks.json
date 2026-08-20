@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python3 .github/hooks/block-dangerous-commands/block-dangerous-commands.py",
+        "osx": "python3 .github/hooks/block-dangerous-commands/block-dangerous-commands.py",
+        "linux": "python3 .github/hooks/block-dangerous-commands/block-dangerous-commands.py",
+        "windows": "python .github/hooks/block-dangerous-commands/block-dangerous-commands.py",
+        "timeout": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+id: skill-authoring
+type: skill
+version: 1.0.0
+name: Skill Authoring
+description: >-
+  Author new Agent Hub skills with correct structure, frontmatter, manifests, and
+  quality gates. Use when creating or upgrading bundle skills at scale.
+tags: [meta, authoring, skill]
+status: active

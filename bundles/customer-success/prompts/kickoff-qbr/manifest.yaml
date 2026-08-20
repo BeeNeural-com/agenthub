@@ -1,0 +1,8 @@
+id: kickoff-qbr
+type: prompt
+version: 1.0.0
+name: Kickoff QBR Prep
+description: >-
+  Kickoff prompt for Customer Success workflows.
+tags: [customer-success, kickoff]
+status: active

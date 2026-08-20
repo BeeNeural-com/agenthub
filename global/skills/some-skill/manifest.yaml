@@ -1,0 +1,24 @@
+id: some-skill
+type: skill
+version: 1.0.0
+created_at: '2026-02-27'
+name: Some Skill
+description: >-
+  Template skill for authoring new Agent Hub skills. Use as a starting point when
+  creating custom skills — replace this description and body with real content.
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-02-27'
+  by: eqir1ib
+  changes:
+  - Initial release

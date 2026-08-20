@@ -1,0 +1,16 @@
+id: operations
+type: bundle
+version: 1.0.0
+name: Operations
+description: >-
+  SOPs, process optimization, business cases, and status reporting for operational excellence.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - operations
+  - sop
+  - process
+  - business-case
+status: active
+skill_count: 4

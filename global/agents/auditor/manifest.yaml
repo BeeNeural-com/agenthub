@@ -1,0 +1,26 @@
+id: auditor
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Auditor
+description: >-
+  Role agent for the quality auditor function. Accepts a component and applies all six SWE review criteria,
+  all six coverage checker protocols, all six traceability checker protocols, and the Quality Summarizer
+  synthesis. Applies a Plan-First gate. Use this role when auditing the quality of any level's artifacts
+  for ASPICE compliance, or for a full V-Model quality sign-off.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

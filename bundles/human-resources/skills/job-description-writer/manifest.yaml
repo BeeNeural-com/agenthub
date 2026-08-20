@@ -1,0 +1,8 @@
+id: job-description-writer
+type: skill
+version: 1.0.0
+name: Job Description Writer
+description: >-
+  Write inclusive, accurate job descriptions with requirements and competencies. Use when opening new roles.
+tags: [human-resources, job-description-writer]
+status: active

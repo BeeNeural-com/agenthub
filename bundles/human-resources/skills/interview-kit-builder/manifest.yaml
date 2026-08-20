@@ -1,0 +1,8 @@
+id: interview-kit-builder
+type: skill
+version: 1.0.0
+name: Interview Kit Builder
+description: >-
+  Build structured interview kits with stages, questions, and evaluation criteria. Use for consistent hiring loops.
+tags: [human-resources, interview-kit-builder]
+status: active

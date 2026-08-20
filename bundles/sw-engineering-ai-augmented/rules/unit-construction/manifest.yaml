@@ -1,0 +1,22 @@
+id: unit-construction
+type: rule
+version: 1.0.0
+name: SWE.3 Unit Construction
+description: >-
+  Conventions for implementing C++ source files (*.cpp) as SWE.3 unit construction artifacts for the E3 Software Platform.
+author:
+  name: Peter Zehnal
+  id: f4jou1r
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f4jou1r
+  changes:
+  - Initial release

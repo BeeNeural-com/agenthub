@@ -1,0 +1,22 @@
+id: cpp-callbacks
+type: rule
+version: 1.0.0
+name: C++ Callbacks
+description: >-
+  Design rules for callback extension patterns in C++ library classes. Covers pattern selection, mandatory constraints, and trade-offs for all src/ headers and implementation files.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

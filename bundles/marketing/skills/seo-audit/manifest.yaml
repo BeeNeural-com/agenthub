@@ -1,0 +1,8 @@
+id: seo-audit
+type: skill
+version: 1.0.0
+name: SEO Audit
+description: >-
+  Technical and content SEO audit with prioritized fixes. Use for site health reviews or traffic decline investigation.
+tags: [marketing, seo-audit]
+status: active

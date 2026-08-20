@@ -1,0 +1,22 @@
+id: use-case-writing
+type: rule
+version: 1.0.0
+name: Use Case Writing
+description: >-
+  Rules for writing use case documents for software components.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

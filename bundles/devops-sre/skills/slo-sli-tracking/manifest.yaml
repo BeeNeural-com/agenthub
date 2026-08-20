@@ -1,0 +1,8 @@
+id: slo-sli-tracking
+type: skill
+version: 1.0.0
+name: SLO/SLI Tracking
+description: >-
+  Define SLIs, SLOs, error budgets, and alerting policies for services. Use when establishing or reviewing reliability targets.
+tags: [devops-sre, slo-sli-tracking]
+status: active

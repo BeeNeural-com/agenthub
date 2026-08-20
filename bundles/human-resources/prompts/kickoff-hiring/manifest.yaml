@@ -1,0 +1,8 @@
+id: kickoff-hiring
+type: prompt
+version: 1.0.0
+name: Kickoff Hiring Process
+description: >-
+  Kickoff prompt for Human Resources workflows.
+tags: [human-resources, kickoff]
+status: active

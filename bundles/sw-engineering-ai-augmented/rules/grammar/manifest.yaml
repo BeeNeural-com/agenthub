@@ -1,0 +1,22 @@
+id: grammar
+type: rule
+version: 1.0.0
+name: Grammar
+description: >-
+  Grammar and writing quality rules for all project text — AsciiDoc documents, C++ Doxygen comment blocks, and Markdown files.
+author:
+  name: Mate Vukic
+  id: gvidwxu
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: gvidwxu
+  changes:
+  - Initial release

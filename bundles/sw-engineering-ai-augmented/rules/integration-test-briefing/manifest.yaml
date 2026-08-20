@@ -1,0 +1,22 @@
+id: integration-test-briefing
+type: rule
+version: 1.0.0
+name: Integration Test Briefing Format
+description: >-
+  Format rules for integration test briefing files produced by the Software Architect as domain-content handoffs to the Integration Tester.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

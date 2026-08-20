@@ -1,0 +1,17 @@
+id: document-processing
+type: bundle
+version: 1.0.0
+name: Document Processing
+description: >-
+  Create, analyze, and transform office documents (Word, Excel, PowerPoint, PDF) for cross-department workflows.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - documents
+  - docx
+  - xlsx
+  - pptx
+  - pdf
+status: active
+skill_count: 4

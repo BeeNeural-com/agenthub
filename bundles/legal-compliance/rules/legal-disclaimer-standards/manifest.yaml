@@ -1,0 +1,8 @@
+id: legal-disclaimer-standards
+type: rule
+version: 1.0.0
+name: Legal Disclaimer Standards
+description: >-
+  Mandatory disclaimers and escalation to counsel.
+tags: [legal-compliance, standards]
+status: active

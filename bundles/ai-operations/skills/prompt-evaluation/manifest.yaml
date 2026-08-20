@@ -1,0 +1,8 @@
+id: prompt-evaluation
+type: skill
+version: 1.0.0
+name: Prompt Evaluation
+description: >-
+  Build test sets and metrics to regression-test prompts and models. Use before promoting prompt changes to production.
+tags: [ai-operations, prompt-evaluation]
+status: active

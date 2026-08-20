@@ -1,0 +1,8 @@
+id: xlsx-analysis
+type: skill
+version: 1.0.0
+name: XLSX Analysis
+description: >-
+  Build and analyze Excel spreadsheets with formulas, pivot tables, and charts. Use for financial models, operational dashboards, and data summaries.
+tags: [document-processing, xlsx-analysis]
+status: active

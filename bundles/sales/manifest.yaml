@@ -1,0 +1,16 @@
+id: sales
+type: bundle
+version: 1.0.0
+name: Sales & Revenue
+description: >-
+  Discovery prep, account research, outreach, battlecards, and lead qualification.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - sales
+  - revenue
+  - outreach
+  - discovery
+status: active
+skill_count: 6

@@ -1,0 +1,8 @@
+id: hr-standards
+type: rule
+version: 1.0.0
+name: HR Standards
+description: >-
+  Inclusive language, bias reduction, and PII handling.
+tags: [human-resources, standards]
+status: active

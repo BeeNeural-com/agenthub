@@ -1,0 +1,8 @@
+id: kickoff-incident
+type: prompt
+version: 1.0.0
+name: Kickoff Incident Response
+description: >-
+  Kickoff prompt for DevOps & SRE workflows.
+tags: [devops-sre, kickoff]
+status: active

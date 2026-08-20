@@ -1,0 +1,9 @@
+id: web-ui-patterns
+type: skill
+version: 1.0.0
+name: Web UI Patterns
+description: >-
+  Layout, responsive design, component libraries (shadcn, MUI, Tailwind), and design tokens.
+  Use when implementing web interfaces and design systems.
+tags: [web-development, ui, design]
+status: active

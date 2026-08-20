@@ -1,0 +1,22 @@
+id: cpp-mocking-strategies
+type: skill
+version: 1.0.0
+name: C++ Mocking Strategies
+description: >-
+  Use when deciding how to mock C++ dependencies for unit tests. Covers five techniques with decision table and worked examples.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

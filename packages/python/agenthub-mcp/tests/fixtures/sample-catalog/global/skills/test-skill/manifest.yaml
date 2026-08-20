@@ -1,0 +1,5 @@
+id: test-skill
+type: skill
+version: 1.0.0
+name: Test Skill
+description: Minimal skill fixture for unit tests.

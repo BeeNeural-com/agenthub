@@ -1,0 +1,9 @@
+id: web-docs-research
+type: skill
+version: 1.0.0
+name: Web Docs Research
+description: >-
+  Find official documentation (MDN, React/Vue/Angular/Node/Next sites), version-specific
+  docs, and avoid stale blog posts. Use when verifying APIs or learning current best practices.
+tags: [web-development, documentation, research]
+status: active

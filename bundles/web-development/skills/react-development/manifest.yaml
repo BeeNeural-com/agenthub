@@ -1,0 +1,9 @@
+id: react-development
+type: skill
+version: 1.0.0
+name: React Development
+description: >-
+  React components, hooks, state management, performance, and accessibility basics.
+  Use when building or reviewing React UI.
+tags: [web-development, react, frontend]
+status: active

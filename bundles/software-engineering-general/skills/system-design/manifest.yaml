@@ -1,0 +1,8 @@
+id: system-design
+type: skill
+version: 1.0.0
+name: System Design
+description: >-
+  Design distributed systems with capacity, consistency, and failure modes. Use for new services or major scalability changes.
+tags: [software-engineering-general, system-design]
+status: active

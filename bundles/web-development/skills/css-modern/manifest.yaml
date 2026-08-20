@@ -1,0 +1,9 @@
+id: css-modern
+type: skill
+version: 1.0.0
+name: Modern CSS
+description: >-
+  Tailwind CSS, CSS Modules, styled-components, and modern layout techniques.
+  Use when styling web applications.
+tags: [web-development, css, styling]
+status: active

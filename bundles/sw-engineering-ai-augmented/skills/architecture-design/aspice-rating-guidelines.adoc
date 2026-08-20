@@ -1,0 +1,73 @@
+= SWE.2 — Software Architectural Design: ASPICE Rating Guidelines
+:source: VDA Automotive SPICE Guidelines, 2nd Edition 2023, Section 3.9
+:toc: left
+:toclevels: 3
+
+== Purpose
+
+Establish an analyzed software architecture, comprising static and dynamic aspects, consistent with the software requirements, that is a basis for software detailed design, software component integration and testing, and software verification.
+
+== General Interpretation Guidance
+
+=== The Aim of Architectural Design
+
+The architectural design serves three interrelated goals:
+
+. *Divide and conquer* — decompose the software into elements small enough to be understood, implemented, and verified in isolation.
+. *Eliminate superfluous elements* — every element in the design must justify its existence; no speculative or unused components.
+. *Knowledge documentation for future staff* — the design must remain comprehensible to engineers who did not write the original code. All requirements must be covered.
+
+=== Static Views
+
+Static decomposition describes the software structure:
+
+* Decompose the software into components and/or software units with high cohesion and low coupling.
+* External software (OSS, platform middleware, third-party libraries) must appear as *dedicated, named elements* in the static design — they are not invisible infrastructure.
+* The number and type of static views are not prescribed; they depend on product size and complexity.
+
+=== Dynamic Views
+
+Dynamic views are *required alongside static views*. They describe:
+
+* The temporal behavior of elements and their interactions.
+* State transitions, event sequences, and timing constraints.
+* Lifecycle flows: initialization, operation, shutdown, and error handling.
+
+As of Automotive SPICE v4.0, interrupt handling must be explicitly modeled as software units within the dynamic design.
+
+=== No Prescribed View Count or Type
+
+There is no defined minimum number of views, no mandated notation (UML, SysML, or other), and no standard for what constitutes a "complete" set of views. The assessor judges sufficiency based on whether the views together allow a competent engineer to understand and verify the design.
+
+=== Traceability and Consistency
+
+See also VDA Guidelines section 2.3.4 on traceability for clusters of information. Key principles:
+
+* Every SWE.1 `req:` ID must be allocated to at least one `arch:`.
+* Allocation must be bidirectional: from the element back to the requirement.
+* Dynamic models (e.g., sequence diagrams) may serve as the primary traceability vehicle for requirements that span multiple components — direct per-component links can become overwhelming and are not required.
+
+== Rating Rules Within the Process
+
+=== RL.1 — Non-Quantitative Analysis Techniques
+
+*Condition:* Non-quantitative analysis techniques are used for architectural analysis (e.g., expert judgment, qualitative checklists, review records), and no quantitative techniques are available or applicable in the project context.
+
+*Consequence:* `SWE.2.BP2` shall *not* be downrated. Quantitative analysis is not a universal requirement; adequacy of technique must be judged relative to the product's size, complexity, and criticality.
+
+== Rating Rules With Other Processes at Level 1
+
+None defined for SWE.2 in the VDA Guidelines.
+
+== Key Base Practices Summary
+
+[cols="1,4", options="header"]
+|===
+| BP | Subject
+| BP1 | Develop a software architectural design — decompose into elements with defined responsibilities.
+| BP2 | Analyze architectural alternatives — select the architecture based on analysis (e.g., feasibility, performance, risk).
+| BP3 | Evaluate static design aspects — cohesion, coupling, completeness.
+| BP4 | Evaluate dynamic design aspects — interactions, timing, state handling.
+| BP5 | Establish bidirectional traceability — between architectural elements and software requirements.
+| BP6 | Ensure consistency — between SWE.1 requirements and the SWE.2 architecture (no contradiction, no gap).
+|===

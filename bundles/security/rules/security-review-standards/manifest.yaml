@@ -1,0 +1,8 @@
+id: security-review-standards
+type: rule
+version: 1.0.0
+name: Security Review Standards
+description: >-
+  Risk-based security assessment methodology.
+tags: [security, standards]
+status: active

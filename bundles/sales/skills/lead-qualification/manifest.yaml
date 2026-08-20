@@ -1,0 +1,8 @@
+id: lead-qualification
+type: skill
+version: 1.0.0
+name: Lead Qualification
+description: >-
+  Qualify leads using BANT, MEDDIC, or team framework with documented rationale. Use for inbound routing and prioritization.
+tags: [sales, lead-qualification]
+status: active

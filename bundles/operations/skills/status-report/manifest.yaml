@@ -1,0 +1,8 @@
+id: status-report
+type: skill
+version: 1.0.0
+name: Status Report
+description: >-
+  Write RAG status reports for projects or operations with evidence and escalations. Use for weekly stakeholder updates.
+tags: [operations, status-report]
+status: active

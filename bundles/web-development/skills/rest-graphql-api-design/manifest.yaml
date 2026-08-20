@@ -1,0 +1,9 @@
+id: rest-graphql-api-design
+type: skill
+version: 1.0.0
+name: REST and GraphQL API Design
+description: >-
+  REST vs GraphQL, OpenAPI, tRPC, and fetch/axios patterns for web APIs.
+  Use when designing or consuming HTTP APIs in web applications.
+tags: [web-development, api, rest, graphql]
+status: active

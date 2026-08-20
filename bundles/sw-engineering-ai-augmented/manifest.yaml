@@ -1,0 +1,33 @@
+id: sw-engineering-ai-augmented
+type: bundle
+version: 1.0.0
+name: SW Engineering AI Augmented
+description: >-
+  End-to-end software engineering bundle for ASPICE-aligned development workflows
+  across SWE.1-SWE.6, including requirements, architecture/design, implementation,
+  verification, qualification testing, and traceability.
+maintainers:
+  - name: Artur Schuhmacher
+    id: f3f9x0d
+  - name: Zan Strahlja
+    id: tb5xlko
+  - name: Joachim Banhardt
+    id: tdsbimw
+  - name: Mate Vukic
+    id: gvidwxu
+  - name: Peter Zehnal
+    id: f4jou1r
+  - name: Alexander Gembar
+    id: tsq7mde
+tags:
+  - sw-engineering
+  - aspice
+  - automotive
+  - traceability
+  - testing
+  - requirements-engineering
+  - architecture-and-detailed-design
+  - unit-integration-qualification-testing
+  - static-analysis-and-compliance
+  - traceability-and-quality-reporting
+status: active

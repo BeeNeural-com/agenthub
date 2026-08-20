@@ -1,0 +1,22 @@
+id: integration-test-specification
+type: rule
+version: 1.0.0
+name: Integration Test Specification
+description: >-
+  SWE.5-specific conventions for integration test specification Markdown documents extending test-specification with arch-ID traceability and IR01-IR08 review criteria.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

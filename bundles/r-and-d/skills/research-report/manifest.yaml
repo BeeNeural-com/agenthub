@@ -1,0 +1,9 @@
+id: research-report
+type: skill
+version: 1.0.0
+name: Research Report
+description: >-
+  Standard R&D research report format for documenting scouting, literature review,
+  experiment, and feasibility findings.
+tags: [r-and-d, research, documentation]
+status: active

@@ -1,0 +1,9 @@
+id: nextjs-development
+type: skill
+version: 1.0.0
+name: Next.js Development
+description: >-
+  App Router, SSR/SSG, server actions, routing, and data fetching in Next.js.
+  Use when building or reviewing Next.js applications.
+tags: [web-development, nextjs, react]
+status: active

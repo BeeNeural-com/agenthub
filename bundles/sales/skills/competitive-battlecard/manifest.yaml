@@ -1,0 +1,8 @@
+id: competitive-battlecard
+type: skill
+version: 1.0.0
+name: Competitive Battlecard
+description: >-
+  Create sales battlecards with positioning, strengths/weaknesses, and talk tracks vs competitors. Use for competitive deals.
+tags: [sales, competitive-battlecard]
+status: active

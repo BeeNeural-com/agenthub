@@ -1,0 +1,30 @@
+id: block-dangerous-commands
+type: hook
+version: 1.0.0
+created_at: '2026-04-17'
+name: Block Dangerous Commands
+description: >-
+  PreToolUse hook that permanently denies shell commands matching known-dangerous patterns — privilege
+  escalation, destructive filesystem operations, disk formatting, fork bombs, remote code execution, and
+  Windows system abuse.
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags:
+- security
+- PreToolUse
+- deny
+- shell
+- destructive-commands
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-04-17'
+  by: eqir1ib
+  changes:
+  - Initial release

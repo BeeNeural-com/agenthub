@@ -1,0 +1,8 @@
+id: marketing-standards
+type: rule
+version: 1.0.0
+name: Marketing Standards
+description: >-
+  Brand voice, compliance, and measurable campaign goals.
+tags: [marketing, standards]
+status: active

@@ -1,0 +1,8 @@
+id: kpi-definition
+type: skill
+version: 1.0.0
+name: KPI Definition
+description: >-
+  Define metrics with formula, grain, owner, and targets. Use when teams disagree on numbers or building new scorecards.
+tags: [data-analytics, kpi-definition]
+status: active

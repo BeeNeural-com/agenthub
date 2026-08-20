@@ -1,0 +1,8 @@
+id: kickoff-ai-workflow
+type: prompt
+version: 1.0.0
+name: Kickoff AI Workflow
+description: >-
+  Kickoff prompt for AI Operations workflows.
+tags: [ai-operations, kickoff]
+status: active

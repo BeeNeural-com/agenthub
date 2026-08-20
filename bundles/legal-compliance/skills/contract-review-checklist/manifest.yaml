@@ -1,0 +1,9 @@
+id: contract-review-checklist
+type: skill
+version: 1.0.0
+name: Contract Review Checklist
+description: >-
+  Operational checklist for commercial contract review — not legal advice. Use when triaging contracts before counsel review.
+tags: [legal-compliance, contract-review-checklist]
+riskTier: T3
+status: active

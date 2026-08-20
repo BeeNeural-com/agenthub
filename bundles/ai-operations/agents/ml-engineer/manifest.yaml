@@ -1,0 +1,8 @@
+id: ml-engineer
+type: agent
+version: 1.0.0
+name: ML Engineer
+description: >-
+  Primary role agent for AI Operations bundle with Plan-First gate.
+tags: [ai-operations, agent]
+status: active

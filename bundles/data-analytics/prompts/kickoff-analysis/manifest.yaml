@@ -1,0 +1,8 @@
+id: kickoff-analysis
+type: prompt
+version: 1.0.0
+name: Kickoff Data Analysis
+description: >-
+  Kickoff prompt for Data & Analytics workflows.
+tags: [data-analytics, kickoff]
+status: active

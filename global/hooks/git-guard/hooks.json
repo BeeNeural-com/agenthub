@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python3 .github/hooks/git-guard/git-guard.py",
+        "osx": "python3 .github/hooks/git-guard/git-guard.py",
+        "linux": "python3 .github/hooks/git-guard/git-guard.py",
+        "windows": "python .github/hooks/git-guard/git-guard.py",
+        "timeout": 5
+      }
+    ]
+  }
+}

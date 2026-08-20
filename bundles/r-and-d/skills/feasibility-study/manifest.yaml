@@ -1,0 +1,9 @@
+id: feasibility-study
+type: skill
+version: 1.0.0
+name: Feasibility Study
+description: >-
+  Technical and economic feasibility assessment before committing to features,
+  technology adoption, or R&D initiatives.
+tags: [r-and-d, feasibility, decision]
+status: active

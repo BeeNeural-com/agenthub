@@ -1,0 +1,9 @@
+id: synthesize-findings
+type: prompt
+version: 1.0.0
+name: Synthesize Findings
+description: >-
+  Consolidate multiple research inputs into one synthesis with recommendations and
+  routing to requirements, spikes, or further research.
+tags: [r-and-d, research, synthesis]
+status: active

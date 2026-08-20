@@ -1,0 +1,9 @@
+id: budget-plan
+type: skill
+version: 1.0.0
+name: Budget Plan
+description: >-
+  Build annual or quarterly budgets by department with assumptions and scenarios. Use for fiscal planning cycles.
+tags: [finance, budget-plan]
+riskTier: T2
+status: active

@@ -1,0 +1,8 @@
+id: feature-prioritization
+type: skill
+version: 1.0.0
+name: Feature Prioritization
+description: >-
+  Prioritize features using RICE, MoSCoW, or Kano with documented scores. Use when backlog exceeds capacity or stakeholders disagree on order.
+tags: [product-management, feature-prioritization]
+status: active

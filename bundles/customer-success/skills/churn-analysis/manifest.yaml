@@ -1,0 +1,8 @@
+id: churn-analysis
+type: skill
+version: 1.0.0
+name: Churn Analysis
+description: >-
+  Analyze churn patterns and build retention playbooks. Use when churn rises or at-risk accounts need intervention.
+tags: [customer-success, churn-analysis]
+status: active

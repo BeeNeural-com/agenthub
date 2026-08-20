@@ -1,0 +1,22 @@
+id: unit-test-stub
+type: rule
+version: 1.0.0
+name: SWE.4 Unit Test Stub
+description: >-
+  Format rules for writing Doxygen spec blocks and FAIL() stubs above TEST_F macros in tests/unit/**/*.cpp. Used by the Software Designer.
+author:
+  name: Alexander Gembar
+  id: tsq7mde
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tsq7mde
+  changes:
+  - Initial release

@@ -1,0 +1,9 @@
+id: web-testing
+type: skill
+version: 1.0.0
+name: Web Testing
+description: >-
+  Vitest, Playwright, Cypress, and Testing Library for unit, integration, and E2E tests.
+  Use when setting up or writing tests for web applications.
+tags: [web-development, testing, quality]
+status: active

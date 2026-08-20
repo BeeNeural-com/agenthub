@@ -1,0 +1,22 @@
+id: qualification-test-specification
+type: skill
+version: 1.0.0
+name: Qualification Test Specification
+description: >-
+  SWE.6 qualification test worked examples: fixture patterns, black-box proxy techniques, and a complete calculator spec-to-stub walkthrough.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

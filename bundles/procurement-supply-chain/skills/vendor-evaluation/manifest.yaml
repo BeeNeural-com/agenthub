@@ -1,0 +1,8 @@
+id: vendor-evaluation
+type: skill
+version: 1.0.0
+name: Vendor Evaluation
+description: >-
+  Evaluate vendor proposals with weighted scoring and recommendation. Use after RFP responses or PoC completion.
+tags: [procurement-supply-chain, vendor-evaluation]
+status: active

@@ -1,0 +1,8 @@
+id: ci-cd-pipeline
+type: skill
+version: 1.0.0
+name: CI/CD Pipeline
+description: >-
+  Design and review CI/CD pipelines with build, test, security gates, and artifact promotion. Use when creating or improving delivery automation.
+tags: [devops-sre, ci-cd-pipeline]
+status: active

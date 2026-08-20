@@ -1,0 +1,9 @@
+id: web-database-integration
+type: skill
+version: 1.0.0
+name: Web Database Integration
+description: >-
+  PostgreSQL, MySQL, MongoDB, Prisma, Drizzle, connection pooling, and migrations
+  for web/backend applications.
+tags: [web-development, database, backend]
+status: active

@@ -1,0 +1,22 @@
+id: traceability-dashboard
+type: skill
+version: 1.0.0
+name: Traceability Dashboard
+description: >-
+  Use when generating or reviewing KPI dashboards for ASPICE V-Model traceability and quality summarization across all V-Model levels.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

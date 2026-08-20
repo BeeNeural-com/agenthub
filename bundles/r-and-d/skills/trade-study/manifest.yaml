@@ -1,0 +1,9 @@
+id: trade-study
+type: skill
+version: 1.0.0
+name: Trade Study
+description: >-
+  Multi-criteria trade study and decision analysis for comparing design alternatives,
+  architecture options, or technology choices.
+tags: [r-and-d, decision, trade-study]
+status: active

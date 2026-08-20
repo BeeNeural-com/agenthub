@@ -1,0 +1,9 @@
+id: nda-triage
+type: skill
+version: 1.0.0
+name: NDA Triage
+description: >-
+  Triage mutual and one-way NDAs against standard templates — not legal advice. Use before sending to legal counsel.
+tags: [legal-compliance, nda-triage]
+riskTier: T3
+status: active

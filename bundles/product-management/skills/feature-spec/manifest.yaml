@@ -1,0 +1,8 @@
+id: feature-spec
+type: skill
+version: 1.0.0
+name: Feature Spec
+description: >-
+  Detailed feature specification with user flows, data model, and API touchpoints. Use when PRD is approved and engineering needs implementation detail.
+tags: [product-management, feature-spec]
+status: active

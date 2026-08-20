@@ -1,0 +1,8 @@
+id: frontend-specialist
+type: agent
+version: 1.0.0
+name: Frontend Specialist
+description: >-
+  Frontend-focused role agent for React, Vue, Angular, UI patterns, and UX workflows.
+tags: [web-development, agent, frontend]
+status: active

@@ -1,0 +1,39 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Agent Hub local installs / leftover install trees
+.agenthub/
+.agenthub-*/
+.agenthub-cache/
+
+# Node
+node_modules/
+**/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/*
+!.vscode/mcp.json
+
+# Misc
+*.log
+.env
+.env.*
+!.env.example

@@ -1,0 +1,8 @@
+id: onboarding-plan
+type: skill
+version: 1.0.0
+name: Onboarding Plan
+description: >-
+  Design 30-60-90 day onboarding plans for new hires. Use when offer accepted or internal transfer.
+tags: [human-resources, onboarding-plan]
+status: active

@@ -1,0 +1,9 @@
+id: kickoff-web-feature
+type: prompt
+version: 1.0.0
+name: Kickoff Web Feature
+description: >-
+  Structured kickoff for new web feature development: classify request, select skills,
+  and produce an initial implementation plan.
+tags: [web-development, kickoff]
+status: active

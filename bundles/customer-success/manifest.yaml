@@ -1,0 +1,16 @@
+id: customer-success
+type: bundle
+version: 1.0.0
+name: Customer Success
+description: >-
+  Support triage, KB articles, QBR prep, and churn analysis for customer retention.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - customer-success
+  - support
+  - qbr
+  - churn
+status: active
+skill_count: 5

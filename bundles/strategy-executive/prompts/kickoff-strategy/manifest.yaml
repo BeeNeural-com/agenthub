@@ -1,0 +1,8 @@
+id: kickoff-strategy
+type: prompt
+version: 1.0.0
+name: Kickoff Strategy Session
+description: >-
+  Kickoff prompt for Strategy & Executive workflows.
+tags: [strategy-executive, kickoff]
+status: active

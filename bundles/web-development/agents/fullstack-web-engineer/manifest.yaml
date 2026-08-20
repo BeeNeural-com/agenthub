@@ -1,0 +1,8 @@
+id: fullstack-web-engineer
+type: agent
+version: 1.0.0
+name: Fullstack Web Engineer
+description: >-
+  General web development role agent covering frontend, backend, APIs, and databases.
+tags: [web-development, agent, fullstack]
+status: active

@@ -1,0 +1,8 @@
+id: business-case
+type: skill
+version: 1.0.0
+name: Business Case
+description: >-
+  Build business cases with options, costs, benefits, and recommendation. Use for investment or change proposals.
+tags: [operations, business-case]
+status: active

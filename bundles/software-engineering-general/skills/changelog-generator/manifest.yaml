@@ -1,0 +1,8 @@
+id: changelog-generator
+type: skill
+version: 1.0.0
+name: Changelog Generator
+description: >-
+  Produce user-facing release notes from commits, PRs, or tickets. Use before product or engineering releases.
+tags: [software-engineering-general, changelog-generator]
+status: active

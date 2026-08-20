@@ -1,0 +1,17 @@
+id: finance
+type: bundle
+version: 1.0.0
+name: Finance & FP&A
+description: >-
+  Budgeting, forecasting, variance analysis, and unit economics with governance disclaimers.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - finance
+  - fp-and-a
+  - budget
+  - forecast
+riskTier: T2
+status: active
+skill_count: 4

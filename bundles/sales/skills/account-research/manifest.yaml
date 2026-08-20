@@ -1,0 +1,8 @@
+id: account-research
+type: skill
+version: 1.0.0
+name: Account Research
+description: >-
+  Build account intelligence: org structure, initiatives, tech stack, triggers. Use before outreach or QBR.
+tags: [sales, account-research]
+status: active

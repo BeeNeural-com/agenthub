@@ -1,0 +1,8 @@
+id: email-marketing
+type: skill
+version: 1.0.0
+name: Email Marketing
+description: >-
+  Design email sequences and campaigns with compliance and deliverability best practices. Use for nurture, launch, and lifecycle emails.
+tags: [marketing, email-marketing]
+status: active

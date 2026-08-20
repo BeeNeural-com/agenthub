@@ -1,0 +1,9 @@
+id: variance-analysis
+type: skill
+version: 1.0.0
+name: Variance Analysis
+description: >-
+  Analyze budget vs actual variances with narrative explanations and actions. Use after monthly close.
+tags: [finance, variance-analysis]
+riskTier: T2
+status: active

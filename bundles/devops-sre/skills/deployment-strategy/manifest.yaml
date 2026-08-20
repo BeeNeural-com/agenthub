@@ -1,0 +1,8 @@
+id: deployment-strategy
+type: skill
+version: 1.0.0
+name: Deployment Strategy
+description: >-
+  Plan deployment approaches: rolling, blue/green, canary, and feature flags. Use before production releases or architecture changes.
+tags: [devops-sre, deployment-strategy]
+status: active

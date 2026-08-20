@@ -1,0 +1,25 @@
+id: python-developer
+type: agent
+version: 1.0.0
+created_at: '2026-02-27'
+name: Python Developer
+description: >-
+  Use this agent when you need to implement Python software features, modules, classes, or functions following
+  modern best practices. This includes writing production-ready Python code with type hints, Google-style
+  docstrings, OOP design patterns, and BDD/TDD test coverage.
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-02-27'
+  by: eqir1ib
+  changes:
+  - Initial release

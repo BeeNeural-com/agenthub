@@ -1,0 +1,9 @@
+id: npm-package-research
+type: skill
+version: 1.0.0
+name: npm Package Research
+description: >-
+  Search npm registry, compare versions, semver, bundle size, and pick latest stable packages.
+  Use before adding or upgrading npm dependencies.
+tags: [web-development, npm, tooling]
+status: active

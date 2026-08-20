@@ -1,0 +1,9 @@
+id: web-ux-workflow
+type: skill
+version: 1.0.0
+name: Web UX Workflow
+description: >-
+  User flows, wireframes, usability heuristics, accessibility (WCAG), and developer handoff.
+  Use when planning or reviewing user experience for web features.
+tags: [web-development, ux, accessibility]
+status: active

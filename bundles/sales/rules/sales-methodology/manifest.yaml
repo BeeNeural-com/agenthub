@@ -1,0 +1,8 @@
+id: sales-methodology
+type: rule
+version: 1.0.0
+name: Sales Methodology
+description: >-
+  Discovery-first selling and CRM hygiene.
+tags: [sales, standards]
+status: active

@@ -1,0 +1,8 @@
+id: document-standards
+type: rule
+version: 1.0.0
+name: Document Standards
+description: >-
+  Formatting, accessibility, and version control for office deliverables.
+tags: [document-processing, standards]
+status: active

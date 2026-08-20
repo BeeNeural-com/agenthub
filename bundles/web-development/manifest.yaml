@@ -1,0 +1,19 @@
+id: web-development
+type: bundle
+version: 1.0.0
+name: Web Development
+description: >-
+  Full-stack web development: Node.js, React, Next.js, Vue, Angular, databases,
+  npm research, official docs lookup, UI/UX patterns, and ecosystem references.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - web
+  - frontend
+  - backend
+  - nodejs
+  - react
+  - nextjs
+status: active
+skill_count: 16

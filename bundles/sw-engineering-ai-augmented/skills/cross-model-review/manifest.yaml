@@ -1,0 +1,22 @@
+id: cross-model-review
+type: skill
+version: 1.0.0
+name: Cross-Model Review
+description: >-
+  Use at defined workflow milestones to invoke an independent reviewer from a different model family, avoiding confirmation bias from the same reasoning context.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

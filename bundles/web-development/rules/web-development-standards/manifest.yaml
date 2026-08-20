@@ -1,0 +1,9 @@
+id: web-development-standards
+type: rule
+version: 1.0.0
+name: Web Development Standards
+description: >-
+  Conventions for web projects: TypeScript preferred, official docs first, semver pinning,
+  and accessibility baseline.
+tags: [web-development, standards]
+status: active

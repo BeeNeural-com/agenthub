@@ -1,0 +1,8 @@
+id: support-response-draft
+type: skill
+version: 1.0.0
+name: Support Response Draft
+description: >-
+  Draft empathetic, accurate customer support replies. Use when responding to tickets or social support.
+tags: [customer-success, support-response-draft]
+status: active

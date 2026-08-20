@@ -1,0 +1,24 @@
+id: integration-tester
+type: agent
+version: 1.0.0
+created_at: '2026-03-19'
+name: Integration Tester
+description: >-
+  Role agent for integration testing (SWE.5). Phase 1: test specification (doc/component_integration_tests/).
+  Phase 2: test implementation (tests/integration/). Applies Plan-First gate.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-19'
+  by: f3f9x0d
+  changes:
+  - Initial release

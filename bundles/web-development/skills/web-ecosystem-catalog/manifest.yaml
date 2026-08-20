@@ -1,0 +1,9 @@
+id: web-ecosystem-catalog
+type: skill
+version: 1.0.0
+name: Web Ecosystem Catalog
+description: >-
+  Living reference index of major web libraries by category: UI, state, forms, auth,
+  testing, CSS, and build tools. Use when selecting libraries or onboarding to the stack.
+tags: [web-development, ecosystem, reference]
+status: active

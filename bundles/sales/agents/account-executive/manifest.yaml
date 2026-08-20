@@ -1,0 +1,8 @@
+id: account-executive
+type: agent
+version: 1.0.0
+name: Account Executive
+description: >-
+  Primary role agent for Sales & Revenue bundle with Plan-First gate.
+tags: [sales, agent]
+status: active

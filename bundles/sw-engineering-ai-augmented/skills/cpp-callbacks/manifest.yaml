@@ -1,0 +1,22 @@
+id: cpp-callbacks
+type: skill
+version: 1.0.0
+name: C++ Callbacks
+description: >-
+  Guidelines for designing callbacks in C++. Covers the available options with their trade-offs and code examples.
+author:
+  name: Artur Schuhmacher
+  id: f3f9x0d
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f3f9x0d
+  changes:
+  - Initial release

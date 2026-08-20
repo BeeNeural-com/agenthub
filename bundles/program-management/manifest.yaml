@@ -1,0 +1,16 @@
+id: program-management
+type: bundle
+version: 1.0.0
+name: Program Management
+description: >-
+  RAID logs, stakeholder analysis, and program status reporting for multi-project delivery.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - program-management
+  - raid
+  - stakeholders
+  - status
+status: active
+skill_count: 3

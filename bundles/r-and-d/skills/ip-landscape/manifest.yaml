@@ -1,0 +1,9 @@
+id: ip-landscape
+type: skill
+version: 1.0.0
+name: IP Landscape
+description: >-
+  Strategic IP landscape mapping: patent holders, white space, and risk areas for
+  R&D planning. Not legal advice.
+tags: [r-and-d, ip, landscape, strategy]
+status: active

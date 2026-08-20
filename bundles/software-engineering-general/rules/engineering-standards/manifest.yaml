@@ -1,0 +1,8 @@
+id: engineering-standards
+type: rule
+version: 1.0.0
+name: General Engineering Standards
+description: >-
+  Code quality, design review, and documentation norms.
+tags: [software-engineering-general, standards]
+status: active

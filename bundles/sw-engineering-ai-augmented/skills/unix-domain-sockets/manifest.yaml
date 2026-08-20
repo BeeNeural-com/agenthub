@@ -1,0 +1,22 @@
+id: unix-domain-sockets
+type: skill
+version: 1.0.0
+name: Unix Domain Sockets
+description: >-
+  POSIX Unix domain socket API reference with usage patterns and design guidance for E3 Software Platform IPC.
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

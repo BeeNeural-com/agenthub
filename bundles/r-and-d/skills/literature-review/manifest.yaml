@@ -1,0 +1,9 @@
+id: literature-review
+type: skill
+version: 1.0.0
+name: Literature Review
+description: >-
+  Structured literature and prior-work review for academic, industry, and internal evidence
+  before feasibility studies or research reports.
+tags: [r-and-d, research, literature]
+status: active

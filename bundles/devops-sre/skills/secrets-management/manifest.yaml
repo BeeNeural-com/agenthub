@@ -1,0 +1,8 @@
+id: secrets-management
+type: skill
+version: 1.0.0
+name: Secrets Management
+description: >-
+  Manage secrets lifecycle: storage, rotation, scanning, and access control. Use when handling credentials, API keys, or certificates.
+tags: [devops-sre, secrets-management]
+status: active

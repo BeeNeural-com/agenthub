@@ -1,0 +1,9 @@
+id: prototype-spike
+type: skill
+version: 1.0.0
+name: Prototype Spike
+description: >-
+  Time-boxed proof-of-concept methodology for validating technical hypotheses
+  before full implementation commitment.
+tags: [r-and-d, prototype, spike, poc]
+status: active

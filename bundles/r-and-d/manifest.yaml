@@ -1,0 +1,17 @@
+id: r-and-d
+type: bundle
+version: 1.0.0
+name: R&D Department
+description: >-
+  End-to-end R&D workflows: research, scouting, feasibility, experimentation, innovation,
+  IP awareness, and handoff to engineering requirements.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - r-and-d
+  - research
+  - innovation
+  - feasibility
+  - prototyping
+status: active

@@ -1,0 +1,8 @@
+id: kickoff-program
+type: prompt
+version: 1.0.0
+name: Kickoff Program Review
+description: >-
+  Kickoff prompt for Program Management workflows.
+tags: [program-management, kickoff]
+status: active

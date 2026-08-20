@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agenthub"
+version = "0.1.0"
+description = "Agent Hub catalog SDK — download skills, connect to agents and applications"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.2,<2"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+agenthub = "agenthub.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agenthub = ["py.typed"]

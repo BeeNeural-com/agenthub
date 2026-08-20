@@ -1,0 +1,8 @@
+id: owasp-top10-review
+type: skill
+version: 1.0.0
+name: OWASP Top 10 Review
+description: >-
+  Review application against OWASP Top 10 web risks with remediation guidance. Use for web app security assessments.
+tags: [security, owasp-top10-review]
+status: active

@@ -1,0 +1,87 @@
+= SWE.5 — Software Component Verification and Integration: ASPICE Rating Guidelines
+:source: VDA Automotive SPICE Guidelines, 2nd Edition 2023, Section 3.12
+:toc: left
+:toclevels: 3
+
+== Purpose
+
+Verify that software components are consistent with the software architectural design, and integrate software elements and verify that the integrated software elements are consistent with the software architecture and software detailed design.
+
+== General Interpretation Guidance
+
+=== The Scope of SWE.5
+
+SWE.5 covers two related but distinct activities:
+
+. *Standalone component verification* — verifying a software component (a collection of units) against its specification in the architectural design, without necessarily combining it with other components.
+. *Integration* — combining software elements and verifying that their interactions are consistent with the architectural and detailed design.
+
+The term *"integrated software"* in SWE.5 refers solely to the technical software product or sample under verification. It does not imply:
+
+* That documentation is complete.
+* That SWE.4 (unit verification) must have been completed first — the PAM is not a lifecycle model; processes may overlap.
+
+=== Verification Measure Definition
+
+Entry and exit criteria for verification measures may be defined *per set of measures* rather than for each individual measure. This is a common and acceptable approach for integration test campaigns.
+
+=== Automation of Verification Measures
+
+When a verification measure is automated, the automation itself (scripts, test programs) must be addressed for correctness, completeness, and consistency in the verification measure definition. Unverified automation is not a valid verification measure.
+
+=== Explorative Testing
+
+As with SWE.4, explorative testing based on experience (error guessing, boundary probing, exploratory sessions) is a legitimate and valuable part of integration verification. Such tests:
+
+* Cannot by definition be traced to the architectural design — they are experience-driven.
+* *Must* have traceability between individual explorative test cases and their results.
+
+=== Verification Measures vs. Release Plans
+
+Selection of integration verification measures is a technical judgment based on the architectural design, component interactions, risk, and engineering experience. The completeness of the release plan is not a prerequisite for technically sound measure selection.
+
+== Rating Rules Within the Process
+
+=== RL.1 — Entry/Exit Criteria Specified for a Set of Measures
+
+*Condition:* Entry/exit criteria are reasonably specified for a _set_ of verification measures (i.e., at the test campaign or test phase level) rather than for each individual measure.
+
+*Consequence:* `SWE.5.BP1` and `SWE.5.BP2` shall *not* be downrated.
+
+=== RL.2 — Automated Verification Measure Without Self-Verification
+
+*Condition:* A verification measure is automated, but the correctness, completeness, and consistency of the automation are *not* addressed in the verification measure definition.
+
+*Consequence:* `SWE.5.BP1` or `SWE.5.BP2` (whichever covers the automated measure) shall be *downrated*.
+
+=== RL.3 — Explorative Tests Without Traceability to Architectural Design
+
+*Condition:* Verification measures represent explorative tests (experience-based). By definition, these cannot be traced to the architectural design.
+
+*Consequence:* `SWE.5.BP6` shall *not* be downrated for the absence of architectural-design traceability.
+
+NOTE: Traceability between explorative test _cases_ and their _results_ is still required.
+
+=== RL.4 — Measure Selection Based on Incomplete Release Plan
+
+*Condition:* Selection of integration verification measures is technically sound but the release plan is inadequate or incomplete.
+
+*Consequence:* `SWE.5.BP3` shall *not* be downrated.
+
+== Rating Rules With Other Processes at Level 1
+
+None defined for SWE.5 in the VDA Guidelines.
+
+== Key Base Practices Summary
+
+[cols="1,4", options="header"]
+|===
+| BP | Subject
+| BP1 | Define integration verification measures — specify scope, entry/exit criteria, and the architectural design elements under test.
+| BP2 | Define integration test cases — derived from architectural design (arch: sequences and interfaces) with clear preconditions and expected outcomes.
+| BP3 | Select integration test cases — cover all architectural interfaces and dynamic interactions; include regression selection strategy.
+| BP4 | Perform integration — assemble software elements in the integration sequence defined by the architectural design.
+| BP5 | Conduct integration tests — execute defined test cases; record results with pass/fail verdict.
+| BP6 | Establish bidirectional traceability — between integration test cases and the architectural design (arch: IDs) and between explorative test cases and their results.
+| BP7 | Ensure consistency — between integration test results and the architectural design.
+|===

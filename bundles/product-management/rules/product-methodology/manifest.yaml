@@ -1,0 +1,8 @@
+id: product-methodology
+type: rule
+version: 1.0.0
+name: Product Methodology
+description: >-
+  Outcome-driven product development standards.
+tags: [product-management, standards]
+status: active

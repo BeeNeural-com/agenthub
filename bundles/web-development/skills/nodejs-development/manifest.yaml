@@ -1,0 +1,9 @@
+id: nodejs-development
+type: skill
+version: 1.0.0
+name: Node.js Development
+description: >-
+  Node.js APIs, ESM/CJS modules, npm scripts, async patterns, and security basics.
+  Use when building or reviewing server-side JavaScript/TypeScript.
+tags: [web-development, nodejs, backend]
+status: active

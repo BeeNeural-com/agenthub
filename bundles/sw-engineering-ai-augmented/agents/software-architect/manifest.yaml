@@ -1,0 +1,22 @@
+id: software-architect
+type: agent
+version: 1.0.0
+name: Software Architect
+description: >-
+  Specifies architectural design of a component (elements, interfaces, dynamic behavior) and generates an integration test briefing.
+author:
+  name: Peter Zehnal
+  id: f4jou1r
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: f4jou1r
+  changes:
+  - Initial release

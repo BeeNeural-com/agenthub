@@ -1,0 +1,16 @@
+id: software-engineering-general
+type: bundle
+version: 1.0.0
+name: Software Engineering (General)
+description: >-
+  Language-agnostic engineering workflows: review, TDD, architecture, APIs, RFCs, and changelogs.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - software-engineering
+  - architecture
+  - testing
+  - api
+status: active
+skill_count: 8

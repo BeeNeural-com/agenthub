@@ -1,0 +1,8 @@
+id: technical-rfc
+type: skill
+version: 1.0.0
+name: Technical RFC
+description: >-
+  Author request-for-comments documents for significant technical decisions. Use when change affects multiple teams or is hard to reverse.
+tags: [software-engineering-general, technical-rfc]
+status: active

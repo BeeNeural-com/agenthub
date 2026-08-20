@@ -1,0 +1,9 @@
+id: innovation-lead
+type: agent
+version: 1.0.0
+name: Innovation Lead
+description: >-
+  Innovation and ideation specialist for brainstorming, TRL assessment, and R&D
+  backlog prioritization.
+tags: [r-and-d, innovation, agent]
+status: active

@@ -1,0 +1,8 @@
+id: ticket-triage
+type: skill
+version: 1.0.0
+name: Ticket Triage
+description: >-
+  Triage support tickets for priority, routing, and initial response SLA. Use in support queue management.
+tags: [customer-success, ticket-triage]
+status: active

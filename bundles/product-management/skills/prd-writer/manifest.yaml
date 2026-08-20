@@ -1,0 +1,8 @@
+id: prd-writer
+type: skill
+version: 1.0.0
+name: PRD Writer
+description: >-
+  Write product requirements documents with problem context, goals, scope, and acceptance criteria. Use when defining a new feature or major enhancement for engineering handoff.
+tags: [product-management, prd-writer]
+status: active

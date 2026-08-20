@@ -1,0 +1,16 @@
+id: security
+type: bundle
+version: 1.0.0
+name: Security
+description: >-
+  Threat modeling, OWASP review, secrets scanning, and vulnerability triage for application security.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - security
+  - appsec
+  - owasp
+  - threat-model
+status: active
+skill_count: 4

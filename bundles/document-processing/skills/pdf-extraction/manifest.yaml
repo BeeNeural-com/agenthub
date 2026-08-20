@@ -1,0 +1,8 @@
+id: pdf-extraction
+type: skill
+version: 1.0.0
+name: PDF Extraction
+description: >-
+  Extract text, tables, and metadata from PDFs and merge or split documents. Use when ingesting contracts, invoices, or research papers.
+tags: [document-processing, pdf-extraction]
+status: active

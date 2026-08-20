@@ -1,0 +1,22 @@
+id: quality-summarizer
+type: skill
+version: 1.0.0
+name: Quality Summarizer
+description: >-
+  V-Model quality aggregation logic: V-Model Checker Map, cross-level ID registry construction, heat-map computation, and consolidated quality report template.
+author:
+  name: Mate Vukic
+  id: gvidwxu
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: gvidwxu
+  changes:
+  - Initial release

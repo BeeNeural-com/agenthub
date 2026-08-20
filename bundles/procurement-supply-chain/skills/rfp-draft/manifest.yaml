@@ -1,0 +1,8 @@
+id: rfp-draft
+type: skill
+version: 1.0.0
+name: RFP Draft
+description: >-
+  Draft request for proposal documents for vendor selection. Use when formal sourcing process required.
+tags: [procurement-supply-chain, rfp-draft]
+status: active

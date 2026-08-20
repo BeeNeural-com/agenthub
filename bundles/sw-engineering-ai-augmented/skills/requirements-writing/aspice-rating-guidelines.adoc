@@ -1,0 +1,129 @@
+= SWE.1 — Software Requirements Analysis: ASPICE Rating Guidelines
+:source: VDA Automotive SPICE Guidelines, 2nd Edition 2023, Section 3.8
+:toc: left
+:toclevels: 3
+
+== Purpose
+
+Establish a structured and analyzed set of software requirements consistent with the system requirements and system architecture, that is a basis for software design, software verification, and software integration test.
+
+== General Interpretation Guidance
+
+=== Iterative vs Incremental Development
+
+Requirements do not need to be complete at the project start. Two common patterns:
+
+* *Iterative development* — existing requirements are refined over several iterations.
+* *Incremental development* — new requirements are added in each cycle.
+
+Both are valid; the assessor evaluates the consistency and traceability of the requirements _as they exist at assessment time_, not their completeness relative to a final vision.
+
+=== What BP1 Covers (Software Requirements the SW Shall Implement)
+
+BP1 specifies the software requirements that the software component shall implement. This includes functional and non-functional behavior visible at the software boundary.
+
+=== What BP4 Covers (Impact on Operating Environment)
+
+BP4 captures the impact of the software on its operating environment, including:
+
+* Human users and HMI ergonomics / fatigue effects.
+* Target hardware (I/O behavior, resource usage).
+* External systems the software interacts with.
+
+=== Requirements Structuring and Categorization
+
+Requirements may be categorized in multiple ways (functional/non-functional, priority, release assignment). If only a coarse "functional/non-functional" split is used — and no finer decomposition into structural categories (e.g., state, data, interface, constraint) — this affects SWE.2 (see RL.4).
+
+=== Requirements Analysis (BP3)
+
+Analysis includes:
+
+* Technical feasibility assessment.
+* Impact on project scope, schedule, and budget.
+* Identification of conflicts and dependencies.
+
+Evidence does not have to be a formal report — tool attributes, comments, or review records are sufficient (see RL.7 and RL.8).
+
+=== Traceability (BP5)
+
+Traceability between software requirements and their upstream origin (either SYS.2 software-relevant system requirements or SYS.3 software architectural design, or both, depending on the project). Only one upstream path needs to be maintained — not both simultaneously (see RL.10).
+
+== Rating Rules Within the Process
+
+=== RL.1 — SW-Only Development: Traceability to Stakeholder Requirements
+
+*Condition:* The project performs software-only development (no separate SYS.2/SYS.3 process) and traceability between software requirements and stakeholder requirements (SYS.1) has been established.
+
+*Consequence:* `SWE.1.BP5` shall *not* be downrated.
+
+=== RL.2 — Platform / Product-Line Requirements as Input
+
+*Condition:* Software requirements originate from a platform or product-line specification (not from system requirements of the current project), and those requirements are consistent and non-contradictory with the project context.
+
+*Consequence:* `SWE.1.BP1` shall *not* be downrated.
+
+=== RL.3 — SW Requirements Derived Directly from Stakeholder Requirements
+
+*Condition:* Software requirements are derived directly from stakeholder requirements without an intermediate system requirements (SYS.2) step, and this approach has been agreed with both software and systems representatives.
+
+*Consequence:* `SWE.1.BP1` shall *not* be downrated.
+
+=== RL.4 — Only "Functional / Non-Functional" Categorization Used
+
+*Condition:* The only requirements categorization used is the coarse "functional" / "non-functional" split, with no finer structural breakdown.
+
+*Consequence:* `SWE.2.BP2` shall be rated *N* (not applicable / not satisfied) because finer categorization is a prerequisite for proper architectural allocation.
+
+NOTE: This rule impacts _SWE.2_, not SWE.1 itself — it is captured here to alert requirements authors that their categorization choices have downstream effects.
+
+=== RL.5 — Release Plan as Prioritization Evidence
+
+*Condition:* The only evidence for requirement prioritization is the project release plan (requirements are assigned to releases).
+
+*Consequence:* `SWE.1.BP2` shall *not* be downrated. A release plan is a valid, sufficient form of prioritization evidence.
+
+=== RL.6 — Requirement-to-Release Mapping Inconsistent with System Requirements
+
+*Condition:* The mapping of software requirements to releases does not align with the priority or release assignment of the corresponding system requirements.
+
+*Consequence:* `SWE.1.BP2` shall be *downrated*. Release alignment must be consistent up the traceability chain.
+
+=== RL.7 — Tool Attributes as Analysis Evidence
+
+*Condition:* Analysis results (e.g., technical feasibility judgements) are captured as tool attributes, review comments, or inline annotations rather than as separate analysis reports.
+
+*Consequence:* `SWE.1.BP3` shall *not* be downrated. The form of the record does not matter; what matters is that the analysis was performed and recorded.
+
+=== RL.8 — Technical Feasibility Covered by Risk Management
+
+*Condition:* Technical feasibility analysis is captured in the project's risk management records (e.g., as identified technical risks with mitigations) rather than as a standalone analysis artifact.
+
+*Consequence:* `SWE.1.BP3` shall *not* be downrated.
+
+=== RL.9 — Analysis Results Not Consistently Used by Project Management
+
+*Condition:* Although analysis results exist, project management does not consistently act on them (e.g., schedule or scope are not adjusted in response to identified feasibility issues).
+
+*Consequence:* `SWE.1.BP3` shall *not* be downrated at the SWE.1 process level. The failure to act on results is a project management process issue (MAN.3), not an SWE.1 non-conformity.
+
+=== RL.10 — Only One Traceability Path Maintained
+
+*Condition:* Traceability exists either to SYS.2 (system requirements) _or_ to SYS.3 (system architecture), but not to both.
+
+*Consequence:* `SWE.1.BP5` shall *not* be downrated. Maintaining two redundant traceability paths to both SYS.2 and SYS.3 is not required — one coherent path is sufficient.
+
+== Rating Rules With Other Processes at Level 1
+
+None defined for SWE.1 in the VDA Guidelines.
+
+== Key Base Practices Summary
+
+[cols="1,4", options="header"]
+|===
+| BP | Subject
+| BP1 | Specify software requirements — what the SW shall implement and its impact on the operating environment.
+| BP2 | Structure and prioritize software requirements — categorize, assign to releases or components.
+| BP3 | Analyze software requirements — feasibility, impact on schedule/budget, conflicts.
+| BP4 | Analyze the impact on the operating environment — hardware, users, external systems.
+| BP5 | Establish bidirectional traceability — between SW requirements and their upstream origin (SYS.2 or SYS.3).
+|===

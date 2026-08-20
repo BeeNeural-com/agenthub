@@ -1,0 +1,8 @@
+id: fp-and-a-analyst
+type: agent
+version: 1.0.0
+name: FP&A Analyst
+description: >-
+  Primary role agent for Finance & FP&A bundle with Plan-First gate.
+tags: [finance, agent]
+status: active

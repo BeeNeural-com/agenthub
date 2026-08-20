@@ -1,0 +1,8 @@
+id: campaign-plan
+type: skill
+version: 1.0.0
+name: Campaign Plan
+description: >-
+  End-to-end marketing campaign plan with objectives, audience, channels, timeline, and KPIs. Use when launching integrated campaigns.
+tags: [marketing, campaign-plan]
+status: active

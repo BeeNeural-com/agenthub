@@ -1,0 +1,25 @@
+id: structured-code-review
+type: skill
+version: '1.0'
+created_at: '2026-05-22'
+name: structured-code-review
+description: >-
+  Produce a structured, multi-document architecture and code-review deliverable for a codebase — system
+  overview, diagrams, prioritized findings, and an action plan. Use for a thorough audit of a whole repository
+  or system, not a quick pull-request diff review.
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: '1.0'
+  date: '2026-05-22'
+  by: eqir1ib
+  changes:
+  - Initial release

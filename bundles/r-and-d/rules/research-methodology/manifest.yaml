@@ -1,0 +1,9 @@
+id: research-methodology
+type: rule
+version: 1.0.0
+name: Research Methodology
+description: >-
+  Scientific rigor, citation standards, and reproducibility rules for all R&D research
+  outputs including scouting, literature review, and feasibility studies.
+tags: [r-and-d, research, standards]
+status: active

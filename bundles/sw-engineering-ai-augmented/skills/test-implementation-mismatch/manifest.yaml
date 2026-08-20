@@ -1,0 +1,22 @@
+id: test-implementation-mismatch
+type: skill
+version: 1.0.0
+name: Test Implementation Mismatch
+description: >-
+  Escalation protocol when a test build reveals an API mismatch between test specification prose and current src/ headers.
+author:
+  name: Mate Vukic
+  id: gvidwxu
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: gvidwxu
+  changes:
+  - Initial release

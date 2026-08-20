@@ -1,0 +1,8 @@
+id: pptx-generation
+type: skill
+version: 1.0.0
+name: PPTX Generation
+description: >-
+  Create slide decks with narrative flow, visual hierarchy, and speaker notes. Use for executive briefings, pitch decks, and workshop materials.
+tags: [document-processing, pptx-generation]
+status: active

@@ -1,0 +1,22 @@
+id: glossary-authoring
+type: rule
+version: 1.0.0
+name: Glossary Authoring
+description: >-
+  Guidelines for authoring glossary entries in the specification of a component ensuring consistent terminology across the whole development lifecycle.
+author:
+  name: Joachim Banhardt
+  id: tdsbimw
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tdsbimw
+  changes:
+  - Initial release

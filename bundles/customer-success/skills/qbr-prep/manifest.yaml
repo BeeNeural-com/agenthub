@@ -1,0 +1,8 @@
+id: qbr-prep
+type: skill
+version: 1.0.0
+name: QBR Prep
+description: >-
+  Prepare quarterly business review decks and narratives for customer accounts. Use before executive customer meetings.
+tags: [customer-success, qbr-prep]
+status: active

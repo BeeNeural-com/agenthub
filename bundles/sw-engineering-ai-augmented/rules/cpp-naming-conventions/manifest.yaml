@@ -1,0 +1,22 @@
+id: cpp-naming-conventions
+type: rule
+version: 1.0.0
+name: C++ Naming Conventions
+description: >-
+  C++ naming conventions (CP10) for variables, functions, classes, and file descriptors in all C++ files (production, tests, and examples).
+author:
+  name: Zan Strahlja
+  id: tb5xlko
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: tb5xlko
+  changes:
+  - Initial release

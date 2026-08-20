@@ -1,0 +1,16 @@
+id: product-management
+type: bundle
+version: 1.0.0
+name: Product Management
+description: >-
+  Discovery, PRDs, roadmaps, prioritization, and sprint planning for product teams.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - product
+  - prd
+  - roadmap
+  - discovery
+status: active
+skill_count: 7

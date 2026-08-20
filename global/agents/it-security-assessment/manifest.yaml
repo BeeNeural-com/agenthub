@@ -1,0 +1,33 @@
+id: it-security-assessment
+type: agent
+version: 1.0.0
+created_at: '2026-04-17'
+name: IT Security Engineer
+description: >-
+  [DRAFT — not for productive use] Use when you need IT security engineering support for CAIS assessments,
+  security reviews, threat and risk analysis, control evaluations, hardening guidance, compliance questionnaires,
+  evidence-based findings, and remediation planning for applications, APIs, infrastructure, and IT products.
+author:
+  name: David Sonnabend
+  id: fixcid1
+tags:
+- it-security
+- cais
+- security-assessment
+- compliance
+- nist
+- owasp
+- iam
+- draft
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-04-17'
+  by: fixcid1
+  changes:
+  - Initial release

@@ -1,0 +1,9 @@
+id: experiment-design
+type: skill
+version: 1.0.0
+name: Experiment Design
+description: >-
+  Rigorous R&D experiment design with hypothesis, variables, controls, and success
+  criteria for prototypes, benchmarks, and validations.
+tags: [r-and-d, experiment, methodology]
+status: active

@@ -1,0 +1,9 @@
+id: prior-art-search
+type: skill
+version: 1.0.0
+name: Prior Art Search
+description: >-
+  Patent and publication prior-art search for novelty assessment and IP-aware design.
+  Not legal advice — consult IP counsel for formal FTO.
+tags: [r-and-d, ip, prior-art, patent]
+status: active

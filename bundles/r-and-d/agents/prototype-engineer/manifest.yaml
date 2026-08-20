@@ -1,0 +1,9 @@
+id: prototype-engineer
+type: agent
+version: 1.0.0
+name: Prototype Engineer
+description: >-
+  Time-boxed prototype spike and PoC execution specialist for validating technical
+  hypotheses with disposable code.
+tags: [r-and-d, prototype, agent]
+status: active

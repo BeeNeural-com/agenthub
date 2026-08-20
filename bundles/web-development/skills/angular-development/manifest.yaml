@@ -1,0 +1,9 @@
+id: angular-development
+type: skill
+version: 1.0.0
+name: Angular Development
+description: >-
+  Standalone components, signals, RxJS, and Angular CLI workflows.
+  Use when building or reviewing Angular applications.
+tags: [web-development, angular, frontend]
+status: active

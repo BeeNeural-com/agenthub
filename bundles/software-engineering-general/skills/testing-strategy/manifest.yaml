@@ -1,0 +1,8 @@
+id: testing-strategy
+type: skill
+version: 1.0.0
+name: Testing Strategy
+description: >-
+  Define test pyramid, coverage goals, and test types for a project or release. Use when test approach is ad hoc or quality gaps appear.
+tags: [software-engineering-general, testing-strategy]
+status: active

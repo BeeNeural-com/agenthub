@@ -1,0 +1,8 @@
+id: interview-scorecard
+type: skill
+version: 1.0.0
+name: Interview Scorecard
+description: >-
+  Create interview scorecards with rubrics for consistent candidate evaluation. Use for every interview stage.
+tags: [human-resources, interview-scorecard]
+status: active

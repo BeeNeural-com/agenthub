@@ -1,0 +1,8 @@
+id: kb-article-writer
+type: skill
+version: 1.0.0
+name: KB Article Writer
+description: >-
+  Write help center articles with problem-solution structure and search optimization. Use for self-service support content.
+tags: [customer-success, kb-article-writer]
+status: active

@@ -1,0 +1,9 @@
+id: vue-development
+type: skill
+version: 1.0.0
+name: Vue Development
+description: >-
+  Vue 3 Composition API, Pinia, Vue Router, and SFC patterns.
+  Use when building or reviewing Vue applications.
+tags: [web-development, vue, frontend]
+status: active

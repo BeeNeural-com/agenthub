@@ -1,0 +1,8 @@
+id: prompt-engineering
+type: skill
+version: 1.0.0
+name: Prompt Engineering
+description: >-
+  Design system prompts, few-shot examples, and tool instructions for reliable LLM behavior. Use when building or tuning AI features.
+tags: [ai-operations, prompt-engineering]
+status: active

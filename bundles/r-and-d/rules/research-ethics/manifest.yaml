@@ -1,0 +1,9 @@
+id: research-ethics
+type: rule
+version: 1.0.0
+name: Research Ethics
+description: >-
+  Data handling, reproducibility, IP respect, and safety standards for R&D research
+  and experimentation.
+tags: [r-and-d, ethics, compliance]
+status: active

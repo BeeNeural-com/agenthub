@@ -1,0 +1,17 @@
+id: devops-sre
+type: bundle
+version: 1.0.0
+name: DevOps & SRE
+description: >-
+  CI/CD, deployments, incidents, SLOs, monitoring, and secrets management for platform reliability.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - devops
+  - sre
+  - ci-cd
+  - incident
+  - observability
+status: active
+skill_count: 7

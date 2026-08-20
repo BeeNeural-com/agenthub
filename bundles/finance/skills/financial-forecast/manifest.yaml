@@ -1,0 +1,9 @@
+id: financial-forecast
+type: skill
+version: 1.0.0
+name: Financial Forecast
+description: >-
+  Create rolling financial forecasts updating actuals and projections. Use monthly or quarterly forecast cycles.
+tags: [finance, financial-forecast]
+riskTier: T2
+status: active

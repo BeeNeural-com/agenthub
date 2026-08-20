@@ -1,0 +1,17 @@
+id: legal-compliance
+type: bundle
+version: 1.0.0
+name: Legal & Compliance
+description: >-
+  Contract review checklists and NDA triage — operational support, not legal advice.
+maintainers:
+  - name: Agent Hub
+    id: agenthub
+tags:
+  - legal
+  - compliance
+  - contracts
+  - nda
+riskTier: T3
+status: active
+skill_count: 2

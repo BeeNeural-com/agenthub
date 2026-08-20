@@ -1,0 +1,22 @@
+id: traceability-dashboard
+type: agent
+version: 1.0.0
+name: Traceability Dashboard Reporter
+description: >-
+  Generates static KPI dashboards and HTML reports for end-to-end traceability and quality summarization across SWE.1-SWE.6.
+author:
+  name: Mate Vukic
+  id: gvidwxu
+tags: []
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-06-17'
+  by: gvidwxu
+  changes:
+  - Initial release

@@ -1,0 +1,8 @@
+id: api-design
+type: skill
+version: 1.0.0
+name: API Design
+description: >-
+  Design REST, GraphQL, or gRPC APIs with consistent conventions and versioning. Use when exposing new or revised service interfaces.
+tags: [software-engineering-general, api-design]
+status: active

@@ -1,0 +1,8 @@
+id: program-management-standards
+type: rule
+version: 1.0.0
+name: Program Management Standards
+description: >-
+  Governance, escalation paths, and dependency tracking.
+tags: [program-management, standards]
+status: active

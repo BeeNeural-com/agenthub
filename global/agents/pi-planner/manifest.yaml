@@ -1,0 +1,29 @@
+id: pi-planner
+type: agent
+version: 1.0.0
+created_at: '2026-03-25'
+name: PI Planner
+description: >-
+  Use when planning or refining Program Increment (PI) work items in Jira across projects. Helps with
+  PI planning, epic and story refinement, backlog grooming, sprint breakdown, dependency identification,
+  and acceptance criteria review while keeping project-specific values configurable.
+author:
+  name: Afrizal Herlambang
+  id: eqir1ib
+tags:
+- pi
+- program-increment
+- jira
+- pi-plan
+status: active
+dependencies:
+  subagents: []
+  skills: []
+  prompts: []
+  instructions: []
+changelog:
+- version: 1.0.0
+  date: '2026-03-25'
+  by: eqir1ib
+  changes:
+  - Initial release
