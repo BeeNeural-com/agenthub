@@ -1,13 +1,13 @@
 # Agent Hub — Download & Connect (no full clone)
 
-> **Architecture:** public marketing/docs site (GitHub Pages) + **private** MCP/catalog repo [`BeeNeural-com/agenthub`](https://github.com/BeeNeural-com/agenthub).  
-> End users never clone the private codebase.  
+> **Architecture:** public marketing/docs site (GitHub Pages) + **public** MCP/catalog repo [`BeeNeural-com/agenthub`](https://github.com/BeeNeural-com/agenthub).  
+> End users install packages + download catalog only — no full clone required.  
 > **Full guide:** [doc/deployment-guide.md](../doc/deployment-guide.md)
 
 ## Flow
 
 1. Visit the **public** Pages site → copy MCP setup / follow install steps  
-2. `pip install` thin packages from **private** git (token or SSH)  
+2. `pip install agenthub agenthub-mcp` (PyPI) or from public git subdirectory  
 3. `agenthub install --source https://github.com/BeeNeural-com/agenthub` → catalog into `~/.agenthub`  
 4. `agenthub connect` → Cursor uses `agenthub-mcp` on PATH + local catalog  
 5. Restart Cursor
@@ -17,32 +17,24 @@
 ## PowerShell (Windows) — primary path
 
 ```powershell
-# 1) Token with read access to private BeeNeural-com/agenthub
-$env:GITHUB_TOKEN = "ghp_xxxxxxxx"   # or $env:AGENTHUB_GITHUB_TOKEN
-
-# 2) Venv + packages from private git (subdirectory only — not a full clone)
+# 1) Venv + packages (PyPI when published; else public git — no token)
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install "agenthub @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
-pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
+pip install agenthub agenthub-mcp
+# Fallback if PyPI not available yet:
+# pip install "agenthub @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
+# pip install "agenthub-mcp @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
 
-# 3) Download catalog only (global/ + bundles/) into user home
+# 2) Download catalog only (global/ + bundles/) into user home
 agenthub install --full --target $HOME\.agenthub --source https://github.com/BeeNeural-com/agenthub
 
 # Optional: one bundle instead of --full
 # agenthub install --bundle web-development --target $HOME\.agenthub --source https://github.com/BeeNeural-com/agenthub
 
-# 4) Write .cursor/mcp.json (agenthub-mcp on PATH + absolute catalog path)
+# 3) Write .cursor/mcp.json (agenthub-mcp on PATH + absolute catalog path)
 agenthub connect --catalog $HOME\.agenthub --output .cursor\mcp.json
 
-# 5) Restart Cursor — agenthub MCP should show 13 tools
-```
-
-**SSH alternative** (no token in pip URL; still set `GITHUB_TOKEN` for `agenthub install` zipball fetch):
-
-```powershell
-pip install "agenthub @ git+ssh://git@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
-pip install "agenthub-mcp @ git+ssh://git@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
+# 4) Restart Cursor — agenthub MCP should show 13 tools
 ```
 
 ---
@@ -51,7 +43,7 @@ pip install "agenthub-mcp @ git+ssh://git@github.com/BeeNeural-com/agenthub.git@
 
 | Artifact | How | Where |
 |----------|-----|--------|
-| `agenthub` + `agenthub-mcp` | pip from git `#subdirectory=` | site-packages / PATH |
+| `agenthub` + `agenthub-mcp` | PyPI or public git `#subdirectory=` | site-packages / PATH |
 | Catalog (`global/` + `bundles/`) | GitHub zipball via `agenthub install --source` | `~/.agenthub` (or `.\.agenthub`) |
 | Fetch cache | MCP/SDK `get_*` | `~/.agenthub/.agenthub-cache/` or `AGENTHUB_CACHE_PATH` |
 
@@ -92,7 +84,7 @@ agenthub search "threat model"
 
 ## Maintainers (optional local checkout)
 
-Developers who **do** clone the private repo can still use a local path:
+Developers who **do** clone the repo can still use a local path:
 
 ```powershell
 agenthub install --full --target .\.agenthub --source .
@@ -105,4 +97,4 @@ agenthub connect --catalog .\.agenthub --output .cursor\mcp.json
 
 - Public site: [docs/index.html](../docs/index.html) → section **Connect without cloning**
 - [Deployment guide](../doc/deployment-guide.md)
-- Private repo: https://github.com/BeeNeural-com/agenthub
+- Catalog repo: https://github.com/BeeNeural-com/agenthub

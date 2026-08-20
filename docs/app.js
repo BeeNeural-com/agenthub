@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  const PRIVATE_MCP_REPO = "https://github.com/BeeNeural-com/agenthub";
+  const CATALOG_REPO = "https://github.com/BeeNeural-com/agenthub";
   const FULL_BUNDLE_PRESET =
     "document-processing,product-management,devops-sre,software-engineering-general,web-development,ai-operations,data-analytics,security,marketing,sales,customer-success,finance,human-resources,operations,program-management,legal-compliance,strategy-executive,communications,procurement-supply-chain,r-and-d,sw-engineering-ai-augmented";
 
@@ -86,8 +86,8 @@
       const owner = host.replace(".github.io", "");
       return `https://github.com/${owner}/${parts[0]}`;
     }
-    // Public Pages / local preview: marketing site; MCP packages live on private BeeNeural repo
-    return PRIVATE_MCP_REPO;
+    // Public Pages / local preview: marketing site; packages live on public BeeNeural catalog repo
+    return CATALOG_REPO;
   }
 
   function defaultCatalogPath() {

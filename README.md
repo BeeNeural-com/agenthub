@@ -2,7 +2,7 @@
 
 Modular catalog of **skills**, **agents**, **rules**, and **prompts** across 21 department bundles — for coding assistants, RAG pipelines, and agentic workflows via Python/npm SDKs and MCP.
 
-**Website:** [docs/index.html](docs/index.html) — public GitHub Pages host; MCP packages/catalog stay on private [`BeeNeural-com/agenthub`](https://github.com/BeeNeural-com/agenthub).
+**Website:** [docs/index.html](docs/index.html) — public GitHub Pages host; packages/catalog live on public [`BeeNeural-com/agenthub`](https://github.com/BeeNeural-com/agenthub).
 
 ## What it is
 
@@ -60,21 +60,21 @@ Global meta skill: `skill-authoring`. Filter visible bundles with `AGENTHUB_BUND
 | Surface | Repo | Audience |
 |---------|------|----------|
 | Marketing / docs site (`docs/`) | **Public** GitHub Pages | Anyone |
-| Packages + catalog + MCP | **Private** [`BeeNeural-com/agenthub`](https://github.com/BeeNeural-com/agenthub) | Token/SSH holders |
+| Packages + catalog + MCP | **Public** [`BeeNeural-com/agenthub`](https://github.com/BeeNeural-com/agenthub) | Anyone |
 
-End users **do not clone** the private repo. They `pip install` package subdirectories from git and `agenthub install --source` to download only `global/` + `bundles/` into `~/.agenthub`.
+End users **do not need a full clone**. Prefer `pip install agenthub agenthub-mcp` (PyPI), or public git subdirectories; then `agenthub install --source` to download only `global/` + `bundles/` into `~/.agenthub`. No GitHub token required.
 
 ## Quick start (no full clone)
 
-**PowerShell** — after you have a GitHub token with read access to the private repo:
+**PowerShell** — public repo, no token:
 
 ```powershell
-$env:GITHUB_TOKEN = "ghp_xxxxxxxx"
-
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install "agenthub @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
-pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
+pip install agenthub agenthub-mcp
+# Fallback if PyPI not published yet:
+# pip install "agenthub @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
+# pip install "agenthub-mcp @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
 
 agenthub install --full --target $HOME\.agenthub --source https://github.com/BeeNeural-com/agenthub
 agenthub connect --catalog $HOME\.agenthub --output .cursor\mcp.json
@@ -94,9 +94,10 @@ agenthub connect --catalog .\.agenthub --output .cursor\mcp.json
 **bash (no-clone)**
 
 ```bash
-export GITHUB_TOKEN=ghp_xxxxxxxx
-pip install "agenthub @ git+https://x-access-token:${GITHUB_TOKEN}@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
-pip install "agenthub-mcp @ git+https://x-access-token:${GITHUB_TOKEN}@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
+pip install agenthub agenthub-mcp
+# Fallback:
+# pip install "agenthub @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
+# pip install "agenthub-mcp @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
 agenthub install --full --target ~/.agenthub --source https://github.com/BeeNeural-com/agenthub
 agenthub connect --catalog ~/.agenthub --output .cursor/mcp.json
 ```
@@ -104,7 +105,7 @@ agenthub connect --catalog ~/.agenthub --output .cursor/mcp.json
 ### Optional: npm MCP runtime
 
 ```powershell
-# From private git (after packages/npm/mcp is published or installed from subdirectory)
+# After @agenthub/mcp is published or installed from public git subdirectory
 agenthub connect --catalog $HOME\.agenthub --runtime npm --output .cursor\mcp.json
 ```
 

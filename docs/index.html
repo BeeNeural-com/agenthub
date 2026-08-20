@@ -23,7 +23,7 @@
         <a href="#agentic">Agentic AI</a>
         <a href="#quick-add">Connect</a>
         <a href="#install">Install</a>
-        <a href="#private-repo">Connect without cloning</a>
+        <a href="#noclone">Connect without cloning</a>
         <a href="#skills">CLI</a>
         <a href="#bundles">Bundles</a>
         <a href="#docs">Docs</a>
@@ -258,7 +258,7 @@ agenthub cache clear --catalog ~/.agenthub</pre>
         <div class="connect-hint">
           <strong>Tip:</strong> Prefer
           <code>agenthub connect --catalog ~/.agenthub --output .cursor/mcp.json</code>
-          after install — it writes an absolute catalog path. No full private-repo clone required.
+          after install — it writes an absolute catalog path. No full-repo clone required.
           Use <code>--runtime npm</code> for the TypeScript MCP server.
         </div>
       </div>
@@ -271,43 +271,41 @@ agenthub cache clear --catalog ~/.agenthub</pre>
           <span class="section-tag">Packages</span>
           <h2>Install SDK &amp; MCP server</h2>
           <p>
-            Packages and catalog live on the <strong>private</strong> repo
+            Packages and catalog live on the <strong>public</strong> repo
             <a href="https://github.com/BeeNeural-com/agenthub" target="_blank" rel="noopener">BeeNeural-com/agenthub</a>.
-            This public site only documents the flow — install from git (token/SSH), not a full clone.
+            Prefer PyPI when published; otherwise install from public git (subdirectory) — no token, no full clone.
           </p>
         </header>
         <div class="install-grid">
           <div class="install-card">
             <div class="install-card-header">
-              <h3>Python <span class="pkg-badge">private git</span></h3>
+              <h3>Python <span class="pkg-badge">public</span></h3>
             </div>
             <div class="code-block">
-              <pre># Set a token with repo read access (private BeeNeural-com/agenthub)
-# PowerShell: $env:GITHUB_TOKEN = "ghp_..."
+              <pre># Prefer PyPI when published
+pip install agenthub agenthub-mcp
 
-pip install "agenthub @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
-pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"
-
-# Or SSH (no token in URL):
-# pip install "agenthub @ git+ssh://git@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"</pre>
+# Or public git (subdirectory — no token, no full clone)
+# pip install "agenthub @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
+# pip install "agenthub-mcp @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"</pre>
             </div>
           </div>
           <div class="install-card">
             <div class="install-card-header">
-              <h3>npm <span class="pkg-badge">private git</span></h3>
+              <h3>npm <span class="pkg-badge">public</span></h3>
             </div>
             <div class="code-block">
-              <pre># TypeScript MCP from the same private monorepo
-npm install "git+https://x-access-token:${GITHUB_TOKEN}@github.com/BeeNeural-com/agenthub.git#main:packages/npm/mcp"
+              <pre># Prefer npm registry when published
+npm install @agenthub/mcp
 
-# Or after local build from a maintainer checkout:
-# npx agenthub-mcp --stdio</pre>
+# Or public git subdirectory:
+# npm install "git+https://github.com/BeeNeural-com/agenthub.git#main:packages/npm/mcp"</pre>
             </div>
           </div>
         </div>
         <div class="code-block standalone" style="margin-top: 1.25rem;">
           <pre># Download catalog only (no full clone) into ~/.agenthub
-# Uses GitHub zipball of global/ + bundles/; needs GITHUB_TOKEN if private
+# Public zipball of global/ + bundles/ — no token required
 
 agenthub install --full --target ~/.agenthub --source https://github.com/BeeNeural-com/agenthub
 # Or one bundle: agenthub install --bundle web-development --target ~/.agenthub --source https://github.com/BeeNeural-com/agenthub
@@ -317,36 +315,30 @@ agenthub connect --catalog ~/.agenthub --output .cursor/mcp.json</pre>
       </div>
     </section>
 
-    <!-- Public site + private MCP (no clone) -->
-    <section id="private-repo">
+    <!-- Public docs site + public catalog (no clone) -->
+    <section id="noclone">
       <div class="container">
         <header class="section-header">
           <span class="section-tag">Connect without cloning</span>
-          <h2>Public docs site · private MCP repo</h2>
+          <h2>Public docs · public catalog repo</h2>
           <p>
-            This landing page is meant for a <strong>public</strong> GitHub Pages host.
-            The MCP server, SDK packages, and skill catalog stay on the <strong>private</strong> repo
+            This landing page is the <strong>public</strong> docs/marketing site.
+            The MCP server, SDK packages, and skill catalog live on the <strong>public</strong> repo
             <a href="https://github.com/BeeNeural-com/agenthub" target="_blank" rel="noopener">BeeNeural-com/agenthub</a>.
-            End users install thin packages + download catalog only — <strong>never clone the full private codebase</strong>.
+            End users install thin packages + download catalog only — <strong>no full clone required</strong>, and <strong>no GitHub token</strong>.
           </p>
         </header>
 
         <ol class="private-repo-steps">
           <li>
-            <strong>Create a GitHub token</strong> with read access to <code>BeeNeural-com/agenthub</code>
-            (classic: <code>repo</code> scope, or fine-grained: Contents read):
-            <div class="code-block standalone" style="margin-top: 0.75rem;">
-              <pre># PowerShell
-$env:GITHUB_TOKEN = "ghp_xxxxxxxx"   # or AGENTHUB_GITHUB_TOKEN</pre>
-            </div>
-          </li>
-          <li>
-            <strong>pip install packages from private git</strong> (subdirectory wheels — not the whole tree):
+            <strong>Install packages</strong> (PyPI preferred; public git fallback — no token):
             <div class="code-block standalone" style="margin-top: 0.75rem;">
               <pre>python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install "agenthub @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
-pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"</pre>
+pip install agenthub agenthub-mcp
+# Fallback:
+# pip install "agenthub @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub"
+# pip install "agenthub-mcp @ git+https://github.com/BeeNeural-com/agenthub.git@main#subdirectory=packages/python/agenthub-mcp"</pre>
             </div>
           </li>
           <li>
@@ -354,7 +346,7 @@ pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.
             <div class="code-block standalone" style="margin-top: 0.75rem;">
               <pre>agenthub install --full --target $HOME\.agenthub --source https://github.com/BeeNeural-com/agenthub</pre>
             </div>
-            <p class="step-note">Uses the GitHub API zipball and extracts <code>global/</code> + <code>bundles/</code> only. Token is read from <code>GITHUB_TOKEN</code> or <code>AGENTHUB_GITHUB_TOKEN</code>.</p>
+            <p class="step-note">Uses the GitHub API zipball and extracts <code>global/</code> + <code>bundles/</code> only. Public repo — no token required.</p>
           </li>
           <li>
             <strong>Generate MCP config</strong> — <code>agenthub-mcp</code> on PATH + local thin catalog:
@@ -366,7 +358,7 @@ pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.
               <pre id="config-private-repo"></pre>
             </div>
           </li>
-          <li><strong>Restart Cursor</strong> — the <strong>agenthub</strong> server should expose 13 tools. No private clone on disk.</li>
+          <li><strong>Restart Cursor</strong> — the <strong>agenthub</strong> server should expose 13 tools. No full clone on disk.</li>
         </ol>
 
         <div class="connect-hint" style="margin-top: 1.5rem;">
@@ -378,10 +370,10 @@ pip install "agenthub-mcp @ git+https://x-access-token:$env:GITHUB_TOKEN@github.
 
         <div class="private-repo-notes">
           <article class="feature-card">
-            <h3>Public Pages vs private MCP</h3>
+            <h3>Docs site vs catalog repo</h3>
             <p>
-              Host this <code>docs/</code> site from a <strong>public</strong> repo (GitHub Pages).
-              Keep packages + catalog on <strong>private</strong> <code>BeeNeural-com/agenthub</code>.
+              Host this docs site from a <strong>public</strong> Pages host.
+              Packages + catalog ship from <strong>public</strong> <code>BeeNeural-com/agenthub</code>.
               The static site never ships skill bodies — only install/connect instructions and MCP JSON templates.
             </p>
           </article>
