@@ -1,0 +1,43 @@
+Publish @agenthub-mcp/mcp (and optionally @agenthub-mcp/sdk) to npm
+=============================================================
+
+Prerequisites
+-------------
+1. npm account: https://www.npmjs.com/signup
+2. Scoped packages need an npm org matching the scope:
+   - Create/join org "agenthub-mcp" at https://www.npmjs.com/org/agenthub-mcp
+   - Your user must be a member with publish rights
+3. First publish of a scoped package must use --access public
+   (otherwise npm defaults to restricted/private for @scope/name)
+
+Login (once per machine)
+------------------------
+npm login
+# or: npm adduser
+
+Verify:
+  npm whoami
+
+Publish @agenthub-mcp/mcp
+---------------------
+cd packages/npm/mcp
+npm install
+npm run build
+npm publish --access public
+
+Publish @agenthub-mcp/sdk (after mcp is on the registry)
+----------------------------------------------------
+# sdk depends on @agenthub-mcp/mcp — point package.json at the
+# published version (e.g. "^0.1.0") instead of "file:../mcp" before publish
+cd packages/npm/sdk
+npm install
+npm run build
+npm publish --access public
+
+Notes
+-----
+- Do not commit npm tokens. Use npm login or CI secrets.
+- bin path must be "./dist/cli.js" (leading ./). Avoid "npm pkg fix"
+  if it strips the ./ — that makes the bin entry invalid.
+- prepublishOnly runs "npm run build" so dist/ is fresh on publish.
+- ENEEDAUTH = not logged in; run npm login then retry publish.

@@ -1,5 +1,5 @@
-{
-  "name": "@agenthub/sdk",
+﻿{
+  "name": "@agenthub-mcp/sdk",
   "version": "0.1.0",
   "description": "Agent Hub catalog SDK for Node/TypeScript applications",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@agenthub/mcp": "file:../mcp"
+    "@agenthub-mcp/mcp": "^0.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.17.2",

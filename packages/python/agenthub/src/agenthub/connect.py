@@ -47,7 +47,7 @@ def mcp_config_stdio(
         args = [str(script)]
     elif runtime == "npm":
         cmd = "npx"
-        args = ["@agenthub/mcp", "--stdio"]
+        args = ["-y", "@agenthub-mcp/mcp", "--stdio"]
     else:
         cmd = "agenthub-mcp"
         args = ["--stdio"]

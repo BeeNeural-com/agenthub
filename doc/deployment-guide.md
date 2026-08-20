@@ -23,7 +23,7 @@ Agent Hub is intentionally split into **three independent layers** that share on
 ┌───────────────────────────┐     ┌───────────────────────────┐
 │  Layer 2 — SDK            │     │  Layer 3 — MCP server     │
 │  pip: agenthub            │     │  pip: agenthub-mcp        │
-│  npm: @agenthub/sdk       │     │  npm: @agenthub/mcp       │
+│  npm: @agenthub-mcp/sdk       │     │  npm: @agenthub-mcp/mcp       │
 │  Catalog, install, search │     │  stdio MCP for IDEs       │
 └───────────────────────────┘     └───────────────────────────┘
 ```
@@ -35,7 +35,7 @@ Agent Hub is intentionally split into **three independent layers** that share on
 - Point Cursor at the same catalog via `agenthub-mcp --stdio`
 - Swap or update the catalog directory without reinstalling packages
 
-The Python MCP server (`agenthub-mcp`) and the TypeScript MCP server (`@agenthub/mcp`) expose the **same 13 tools** over the same catalog layout.
+The Python MCP server (`agenthub-mcp`) and the TypeScript MCP server (`@agenthub-mcp/mcp`) expose the **same 13 tools** over the same catalog layout.
 
 ---
 
@@ -58,8 +58,8 @@ agenthub/                          # monorepo root
 │   │   ├── agenthub/              # PyPI: agenthub (SDK + install CLI)
 │   │   └── agenthub-mcp/          # PyPI: agenthub-mcp (MCP server)
 │   └── npm/
-│       ├── mcp/                   # npm: @agenthub/mcp (TypeScript MCP server)
-│       └── sdk/                   # npm: @agenthub/sdk (Catalog API)
+│       ├── mcp/                   # npm: @agenthub-mcp/mcp (TypeScript MCP server)
+│       └── sdk/                   # npm: @agenthub-mcp/sdk (Catalog API)
 ├── examples/
 │   ├── download-and-connect.md    # quickstart walkthrough
 │   └── test-mcp-stdio.py          # stdio MCP smoke test
@@ -74,8 +74,8 @@ agenthub/                          # monorepo root
 |---------|----------|------|
 | `agenthub` | PyPI | `packages/python/agenthub/` |
 | `agenthub-mcp` | PyPI | `packages/python/agenthub-mcp/` |
-| `@agenthub/mcp` | npm | `packages/npm/mcp/` |
-| `@agenthub/sdk` | npm | `packages/npm/sdk/` |
+| `@agenthub-mcp/mcp` | npm | `packages/npm/mcp/` |
+| `@agenthub-mcp/sdk` | npm | `packages/npm/sdk/` |
 
 Catalog content (`global/`, `bundles/`) ships via `agenthub install --source` from GitHub (or a local checkout for maintainers) — not inside the Python/npm wheels in v0.1.
 
@@ -194,7 +194,7 @@ See [packages/python/agenthub/README.md](../packages/python/agenthub/README.md) 
 
 ---
 
-## 5. Getting started — npm (`@agenthub/mcp`)
+## 5. Getting started — npm (`@agenthub-mcp/mcp`)
 
 The npm package is a **standalone TypeScript MCP server** for coding agents that prefer `npx` (Cursor, Claude Desktop, VS Code).
 
@@ -209,9 +209,9 @@ npm run build
 ### 5.2 Install from npm (when published)
 
 ```bash
-npm install -g @agenthub/mcp
+npm install -g @agenthub-mcp/mcp
 # or use without global install:
-npx -y @agenthub/mcp --stdio
+npx -y @agenthub-mcp/mcp --stdio
 ```
 
 ### 5.3 Run (requires catalog)
@@ -220,12 +220,12 @@ Catalog must already exist (install via Python `agenthub install`):
 
 ```powershell
 $env:AGENTHUB_CATALOG_PATH = "C:\path\to\.agenthub"
-npx @agenthub/mcp --stdio
+npx @agenthub-mcp/mcp --stdio
 ```
 
 See [packages/npm/mcp/README.md](../packages/npm/mcp/README.md) for `mcp.json` examples.
 
-### 5.4 Node embed SDK (`@agenthub/sdk`)
+### 5.4 Node embed SDK (`@agenthub-mcp/sdk`)
 
 ```powershell
 cd packages/npm/sdk
@@ -234,7 +234,7 @@ npm run build
 ```
 
 ```typescript
-import { Catalog } from "@agenthub/sdk";
+import { Catalog } from "@agenthub-mcp/sdk";
 
 const catalog = new Catalog("./.agenthub");
 const skill = catalog.getSkill("feasibility-study");
@@ -251,7 +251,7 @@ $env:AGENTHUB_CATALOG_PATH = ".\.agenthub"
 agenthub connect --catalog .\.agenthub --output .cursor\mcp.json
 ```
 
-**npm MCP runtime** (generates `npx @agenthub/mcp --stdio`):
+**npm MCP runtime** (generates `npx @agenthub-mcp/mcp --stdio`):
 
 ```powershell
 agenthub connect --catalog .\.agenthub --runtime npm --output .cursor\mcp.json
@@ -282,7 +282,7 @@ agenthub connect --catalog .\.agenthub --output .cursor\mcp.json
 }
 ```
 
-**npm variant** (from `--runtime npm`): `"command": "npx"`, `"args": ["@agenthub/mcp", "--stdio"]` with the same `env` block.
+**npm variant** (from `--runtime npm`): `"command": "npx"`, `"args": ["@agenthub-mcp/mcp", "--stdio"]` with the same `env` block.
 
 Restart your IDE after writing `mcp.json`.
 

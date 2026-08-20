@@ -63,7 +63,7 @@ def main() -> None:
         "--runtime",
         choices=["python", "npm"],
         default="python",
-        help="MCP server runtime: pip agenthub-mcp (default) or npm @agenthub/mcp",
+        help="MCP server runtime: pip agenthub-mcp (default) or npm @agenthub-mcp/mcp",
     )
 
     # export-rag

@@ -1,4 +1,4 @@
-# @agenthub/mcp
+# @agenthub-mcp/mcp
 
 MCP server for Agent Hub — connect Cursor, Claude Code, Copilot, or any MCP client to skills, agents, rules, and prompts.
 
@@ -20,7 +20,8 @@ npx agenthub-mcp --stdio
 ## Install
 
 ```bash
-npm install @agenthub/mcp
+npm install -g @agenthub-mcp/mcp
+# or: npx @agenthub-mcp/mcp --stdio
 # or from this repo:
 cd packages/npm/mcp && npm install && npm run build
 ```
@@ -64,14 +65,20 @@ npx agenthub-mcp --stdio
     "agenthub": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@agenthub/mcp@latest", "--stdio"],
+      "args": ["-y", "@agenthub-mcp/mcp", "--stdio"],
       "env": {
-        "AGENTHUB_CATALOG_PATH": "C:\\path\\to\\.agenthub",
-        "AGENTHUB_BUNDLE": "r-and-d"
+        "AGENTHUB_CATALOG_PATH": ".agenthub"
       }
     }
   }
 }
+```
+
+Global install alternative:
+
+```bash
+npm install -g @agenthub-mcp/mcp
+# then command: agenthub-mcp  (Windows may need the full path to the bin)
 ```
 
 If `AGENTHUB_BUNDLE` is unset, bundles are read from `agenthub-lock.json` in the catalog root.

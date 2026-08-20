@@ -6,7 +6,7 @@ Modular catalog of **skills**, **agents**, **rules**, and **prompts** across 21 
 
 ## What it is
 
-Agent Hub is a **filesystem catalog** (`global/` + `bundles/`) of reusable Markdown resources with YAML frontmatter. Install a subset or the full catalog with the Python CLI, then expose it to coding agents through **MCP** (`agenthub-mcp` or `@agenthub/mcp`) or embed it in applications with the **Python/npm SDK**. Fetched resource bodies are cached on disk (`.agenthub-cache/`) for faster repeat access.
+Agent Hub is a **filesystem catalog** (`global/` + `bundles/`) of reusable Markdown resources with YAML frontmatter. Install a subset or the full catalog with the Python CLI, then expose it to coding agents through **MCP** (`agenthub-mcp` or `@agenthub-mcp/mcp`) or embed it in applications with the **Python/npm SDK**. Fetched resource bodies are cached on disk (`.agenthub-cache/`) for faster repeat access.
 
 **Status:** v0.1 working product — SDK, MCP, install, connect, and cache run without access-key gating.
 
@@ -18,8 +18,8 @@ Agent Hub is a **filesystem catalog** (`global/` + `bundles/`) of reusable Markd
 | `bundles/` | 21 department/product bundles (see inventory below) |
 | `packages/python/agenthub/` | Python SDK + CLI (`agenthub install`, `connect`, `search`, cache) |
 | `packages/python/agenthub-mcp/` | Python MCP server (`agenthub-mcp --stdio`, 13 tools) |
-| `packages/npm/mcp/` | TypeScript MCP server (`@agenthub/mcp`) |
-| `packages/npm/sdk/` | TypeScript catalog SDK (`@agenthub/sdk`) |
+| `packages/npm/mcp/` | TypeScript MCP server (`@agenthub-mcp/mcp`) |
+| `packages/npm/sdk/` | TypeScript catalog SDK (`@agenthub-mcp/sdk`) |
 | `doc/` | Deployment guide and architecture research |
 | `examples/` | Download/connect quickstart and MCP stdio smoke test |
 | `scripts/` | Catalog generation and bundle maintenance utilities |
@@ -105,7 +105,7 @@ agenthub connect --catalog ~/.agenthub --output .cursor/mcp.json
 ### Optional: npm MCP runtime
 
 ```powershell
-# After @agenthub/mcp is published or installed from public git subdirectory
+# After @agenthub-mcp/mcp is published or installed from public git subdirectory
 agenthub connect --catalog $HOME\.agenthub --runtime npm --output .cursor\mcp.json
 ```
 

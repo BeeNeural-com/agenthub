@@ -6,7 +6,7 @@ import {
   type BundleInfo,
   type CatalogData,
   type Resource,
-} from "@agenthub/mcp";
+} from "@agenthub-mcp/mcp";
 
 export interface ResourceMeta {
   id: string;
@@ -99,4 +99,4 @@ function toMeta(resource: Resource): ResourceMeta {
   };
 }
 
-export type { BundleInfo, CatalogData, Resource, ResourceType } from "@agenthub/mcp";
+export type { BundleInfo, CatalogData, Resource, ResourceType } from "@agenthub-mcp/mcp";

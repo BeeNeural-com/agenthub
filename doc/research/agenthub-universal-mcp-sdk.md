@@ -123,7 +123,7 @@ Published MCP servers use:
   "mcpServers": {
     "agenthub": {
       "command": "npx",
-      "args": ["-y", "@agenthub/mcp@latest"]
+      "args": ["-y", "@agenthub-mcp/mcp@latest"]
     }
   }
 }
@@ -174,7 +174,7 @@ body = catalog.get("feasibility-study").body
 ```
 
 ```typescript
-import { Catalog } from "@agenthub/sdk";
+import { Catalog } from "@agenthub-mcp/sdk";
 
 const catalog = new Catalog({ bundles: ["r-and-d"] });
 const skills = await catalog.search("feasibility study", { type: "skill" });
@@ -221,8 +221,8 @@ agenthub/                          # monorepo
 │   │   ├── agenthub/              # pip: agenthub — Catalog SDK
 │   │   └── agenthub-mcp/          # pip: agenthub-mcp — MCP server CLI
 │   └── typescript/
-│       ├── @agenthub/sdk/         # npm: programmatic catalog
-│       └── @agenthub/mcp/         # npm: npx MCP server (spawns py or native TS)
+│       ├── @agenthub-mcp/sdk/         # npm: programmatic catalog
+│       └── @agenthub-mcp/mcp/         # npm: npx MCP server (spawns py or native TS)
 ├── packages/python/agenthub-mcp/  # MCP server (migrated from mcp-poc)
 └── .cursor/mcp.json
 ```
@@ -247,7 +247,7 @@ uvx agenthub-mcp --stdio
 uvx agenthub-mcp serve --port 8080
 
 # npm (wrapper or native TS port)
-npx -y @agenthub/mcp
+npx -y @agenthub-mcp/mcp
 ```
 
 #### Surface 2: Embed SDK (RAG / agentic apps)
@@ -262,9 +262,9 @@ doc = catalog.get_skill("literature-review")  # full body
 chunks = catalog.as_rag_documents()     # List[{id, text, metadata}] for vector DB
 ```
 
-**TypeScript (`npm install @agenthub/sdk`):**
+**TypeScript (`npm install @agenthub-mcp/sdk`):**
 ```typescript
-import { Catalog } from "@agenthub/sdk";
+import { Catalog } from "@agenthub-mcp/sdk";
 const catalog = new Catalog();
 const chunks = await catalog.asRagDocuments({ bundles: ["r-and-d"] });
 ```
@@ -313,7 +313,7 @@ The catalog content is the **shared asset**; MCP and SDK are **two transports** 
 **Pragmatic approach:** Author server in Python (reuse `loader.py` + FastMCP). npm package is a thin launcher:
 
 ```javascript
-// @agenthub/mcp/bin/agenthub-mcp.js
+// @agenthub-mcp/mcp/bin/agenthub-mcp.js
 import { spawn } from "child_process";
 spawn("uvx", ["agenthub-mcp", "--stdio"], { stdio: "inherit" });
 ```
@@ -354,7 +354,7 @@ Differentiation:
 
 1. **Extract `loader.py` → `agenthub` Python package** with package-data catalog
 2. **Publish `agenthub-mcp` CLI** — `uvx agenthub-mcp --stdio`
-3. **Publish `@agenthub/mcp` npm wrapper** — `npx -y @agenthub/mcp`
+3. **Publish `@agenthub-mcp/mcp` npm wrapper** — `npx -y @agenthub-mcp/mcp`
 4. **Single config env vars:** `AGENTHUB_BUNDLE`, `AGENTHUB_CATALOG_PATH`, `AGENTHUB_TOOL_DESC_MODE`
 5. **MCP registry metadata** — `mcpName` in package.json for discoverability
 
@@ -362,7 +362,7 @@ Differentiation:
 
 6. **`Catalog.as_rag_documents()`** — emit chunks with metadata for vector indexing
 7. **`Catalog.search(query, type, tags)`** — lightweight routing without vectors
-8. **TypeScript `@agenthub/sdk`** — mirror Python API
+8. **TypeScript `@agenthub-mcp/sdk`** — mirror Python API
 9. **Integration examples:** LangChain, LlamaIndex, mcp-use, raw OpenAI tools
 
 ### P2 — Production deployment
@@ -370,7 +370,7 @@ Differentiation:
 10. **HTTP transport** — `agenthub-mcp serve --port 8080`
 11. **Remote catalog sync** — pull from agenthub-reg / catalog.json
 12. **Auth** — Bearer token for HTTP; OAuth for enterprise
-13. **Version pinning** — `npx @agenthub/mcp@1.2.3`, lockfile in apps
+13. **Version pinning** — `npx @agenthub-mcp/mcp@1.2.3`, lockfile in apps
 
 ### P3 — Ecosystem
 
@@ -413,7 +413,7 @@ class Catalog:
 
 ```json
 {
-  "name": "@agenthub/mcp",
+  "name": "@agenthub-mcp/mcp",
   "bin": { "agenthub-mcp": "./dist/cli.js" },
   "mcpName": "io.agenthub/mcp"
 }
@@ -451,12 +451,12 @@ Week 1: Python packages
 
 Week 2: Distribution
   ├── PyPI publish agenthub + agenthub-mcp
-  ├── npm @agenthub/mcp wrapper
+  ├── npm @agenthub-mcp/mcp wrapper
   └── MCP registry publish
 
 Week 3: HTTP + TS SDK
   ├── agenthub-mcp serve (streamable-http)
-  ├── @agenthub/sdk (TypeScript Catalog)
+  ├── @agenthub-mcp/sdk (TypeScript Catalog)
   └── Examples: LangChain RAG + Cursor mcp.json
 ```
 
@@ -472,7 +472,7 @@ Implementation lives in:
 |---------|------|--------|
 | `agenthub` SDK + CLI | `packages/python/agenthub/` | ✅ tested |
 | `agenthub-mcp` MCP server (Python) | `packages/python/agenthub-mcp/` | ✅ stdio |
-| `@agenthub/mcp` MCP server (npm) | `packages/npm/mcp/` | ✅ stdio |
+| `@agenthub-mcp/mcp` MCP server (npm) | `packages/npm/mcp/` | ✅ stdio |
 | Deployment guide | `doc/deployment-guide.md` | ✅ |
 | Quickstart | `examples/download-and-connect.md` | ✅ |
 | Stdio smoke test | `examples/test-mcp-stdio.py` | ✅ |
@@ -591,7 +591,7 @@ agenthub install  →  .agenthub/ + agenthub-lock.json   (data layer)
                               ↓ AGENTHUB_CATALOG_PATH
          ┌────────────────────┴────────────────────┐
          ▼                                         ▼
-  agenthub.Catalog (SDK)                   agenthub-mcp / @agenthub/mcp
+  agenthub.Catalog (SDK)                   agenthub-mcp / @agenthub-mcp/mcp
   no MCP subprocess                        stdio MCP for coding agents
 ```
 

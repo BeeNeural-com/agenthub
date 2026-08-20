@@ -916,7 +916,7 @@ When authoring new skills, apply these rules to avoid catalog bloat:
 1. **Industry verticals** — Should automotive-specific content stay in SWE bundle while general content grows separately? (Recommended: yes.)
 2. **Localization** — German/English skill variants for CARIAD/EU compliance?
 3. **Certification** — Internal marketplace approval per bundle before `--full` includes finance/legal?
-4. **TypeScript parity** — Mirror top 50 skills in `@agenthub/sdk` for npm consumers?
+4. **TypeScript parity** — Mirror top 50 skills in `@agenthub-mcp/sdk` for npm consumers?
 5. **Community contributions** — Accept external skills PRs with manifest schema validation?
 6. **Skill size cap** — Max SKILL.md length before splitting into `references/`? (Current SWE skills set precedent.)
 

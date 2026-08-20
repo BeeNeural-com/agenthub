@@ -56,7 +56,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Build SDK (depends on local @agenthub/mcp)
+      - name: Build SDK (depends on local @agenthub-mcp/mcp)
         run: |
           npm install --prefix ../mcp
           npm run build --prefix ../mcp

@@ -1,5 +1,5 @@
 {
-  "name": "@agenthub/mcp",
+  "name": "@agenthub-mcp/mcp",
   "version": "0.1.0",
   "description": "Agent Hub MCP server — connect coding agents to skills, agents, rules, and prompts",
   "license": "MIT",

@@ -2,9 +2,11 @@
 
 | Package | Path | Install (dev) | Purpose |
 |---------|------|---------------|---------|
-| `@agenthub/mcp` | `mcp/` | `cd mcp && npm install && npm run build` | MCP server CLI (`agenthub-mcp --stdio`) |
-| `@agenthub/sdk` | `sdk/` | `cd sdk && npm install && npm run build` | TypeScript `Catalog` for apps/RAG |
+| `@agenthub-mcp/mcp` | `mcp/` | `cd mcp && npm install && npm run build` | MCP server CLI (`agenthub-mcp --stdio`) |
+| `@agenthub-mcp/sdk` | `sdk/` | `cd sdk && npm install && npm run build` | TypeScript `Catalog` for apps/RAG |
 
 Both packages read the same on-disk catalog as the Python SDK (`AGENTHUB_CATALOG_PATH` or `--catalog`).
 
 See [examples/download-and-connect.md](../../examples/download-and-connect.md) for full workflow.
+
+To publish to npm, see [examples/npm-publish.txt](../../examples/npm-publish.txt) (`npm login`, then `npm publish --access public`).

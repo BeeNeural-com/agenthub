@@ -42,14 +42,14 @@ Users must be able to **download** Agent Hub content at three granularities and 
 | req-sdk-001 | functional | Python SDK shall provide `Catalog` with `list_*`, `get`, `search`, `read_file`. | must | [research:agenthub-universal-mcp-sdk:§3.2] |
 | req-sdk-002 | functional | SDK shall export `as_rag_documents()` for vector DB indexing. | must | [research:agenthub-universal-mcp-sdk:§3.2] |
 | req-sdk-003 | functional | CLI shall export JSONL via `agenthub export-rag --output <file>`. | must | [research:agenthub-universal-mcp-sdk:§10.4] |
-| req-sdk-004 | functional | TypeScript `@agenthub/sdk` shall mirror Python Catalog API. | should | [research:agenthub-universal-mcp-sdk:§5-P1] |
+| req-sdk-004 | functional | TypeScript `@agenthub-mcp/sdk` shall mirror Python Catalog API. | should | [research:agenthub-universal-mcp-sdk:§5-P1] |
 | req-sdk-005 | non-functional | SDK embed mode shall not require MCP subprocess or pydantic MCP server deps. | must | [research:agenthub-universal-mcp-sdk:§4.1] |
 
 ### Distribution
 
 | ID | Type | Statement | Priority | Research trace |
 |----|------|-----------|----------|----------------|
-| req-dist-001 | functional | Publish `agenthub` and `agenthub-mcp` on PyPI; `@agenthub/mcp` on npm. | must | [research:agenthub-universal-mcp-sdk:§5-P0] |
+| req-dist-001 | functional | Publish `agenthub` and `agenthub-mcp` on PyPI; `@agenthub-mcp/mcp` on npm. | must | [research:agenthub-universal-mcp-sdk:§5-P0] |
 | req-dist-002 | constraint | Pin `mcp>=1.2,<2` until FastMCP migration path is documented. | must | [research:agenthub-universal-mcp-sdk:§7] |
 | req-dist-003 | functional | Support env `AGENTHUB_BUNDLE` for bundle selection at runtime. | must | [research:agenthub-universal-mcp-sdk:§6] |
 
